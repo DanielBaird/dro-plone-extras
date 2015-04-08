@@ -1,0 +1,52 @@
+
+/* DRO Resources */
+
+//
+// (1 April 2015)
+// compile this into css, then paste the result into the css
+// page in plone:
+// https://research.jcu.edu.au/dro/dro_custom.css/manage
+// It will be included in every page in the /dro site.
+//
+
+/////////////////////////////////////////////////////////////////////
+
+#portal-header {
+	background-image: url(/dro/media/dro-banner);
+	background-position: center;
+	background-size: cover;
+}
+
+///////////////////////////////////////////////////// todo paragraphs
+
+p.todo {
+	background: #ffb;
+	padding: 1em;
+}
+p.todo.todo-pic {
+	height: 350px;
+	width: 90%;
+	background-image:
+		linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em),
+		url(http://placecorgi.com/700/100);
+	background-position: center;
+	background-size: cover;
+	padding: 1em;
+	color: white;
+}
+p.todo.todo-pic.todo-pic-small {
+	height: 100px;
+	width: 33%;
+}
+p.todo.todo-pic.todo-pic-0 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/090/300); }
+p.todo.todo-pic.todo-pic-1 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/190/310); }
+p.todo.todo-pic.todo-pic-2 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/290/320); }
+p.todo.todo-pic.todo-pic-3 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/390/330); }
+p.todo.todo-pic.todo-pic-4 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/490/340); }
+p.todo.todo-pic.todo-pic-5 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/590/350); }
+p.todo.todo-pic.todo-pic-6 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/690/360); }
+p.todo.todo-pic.todo-pic-7 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/790/370); }
+p.todo.todo-pic.todo-pic-8 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/890/380); }
+p.todo.todo-pic.todo-pic-9 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/990/390); }
+
+
