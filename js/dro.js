@@ -13,13 +13,13 @@ It will run on every page in the /dro/ site.
 jQuery(function ($) {
 
 	// look for p tags that start with TODO
-	var $ptags = $('#content p');
+	var $ptags = $('#content p, #content td');
 
-	var todoPrefix = 'TODO';
+	var todoPrefix = 'todo';
 	$ptags.each( function(index, p) {
 
 		var $p = $(p);
-		var pText = $p.text();
+		var pText = $p.text().toLowerCase();
 		if (pText.slice(0, todoPrefix.length) == todoPrefix) {
 			// then it's a todo paragraph
 			$p.addClass('todo');
@@ -32,6 +32,11 @@ jQuery(function ($) {
 				if (pText.indexOf('small') != -1) {
 					// it's a small pic
 					$p.addClass('todo-pic-small');
+				}
+
+				if (pText.indexOf('strip') != -1) {
+					// it's a small pic
+					$p.addClass('todo-pic-strip');
 				}
 			}
 		}

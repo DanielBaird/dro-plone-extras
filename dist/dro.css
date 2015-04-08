@@ -4,25 +4,40 @@
   background-position: center;
   background-size: cover; }
 
+iframe {
+  display: block;
+  margin: 10px auto; }
+
+p.todo, td.todo, th.todo, h1.todo, h2.todo, h3.todo, h4.todo {
+  background: #ffb; }
+
 p.todo {
-  background: #ffb;
   padding: 1em; }
 
 p.todo.todo-pic {
   height: 350px;
   width: 90%;
+  margin: 0 auto;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/700/100);
   background-position: center;
   background-size: cover;
   padding: 1em;
   color: white; }
+  p.todo.todo-pic a:link {
+    color: #def !important; }
+  p.todo.todo-pic a:visited {
+    color: #bcf !important; }
 
 p.todo.todo-pic.todo-pic-small {
   height: 100px;
   width: 33%; }
 
+p.todo.todo-pic.todo-pic-strip {
+  height: 80px;
+  width: 90%; }
+
 p.todo.todo-pic.todo-pic-0 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/090/300); }
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/390/300); }
 
 p.todo.todo-pic.todo-pic-1 {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/190/310); }

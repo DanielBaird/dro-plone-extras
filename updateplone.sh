@@ -1,18 +1,17 @@
 
 echo
-echo -n " * About to update Plone."
-echo
+echo " * About to update Plone."
 
 pushd ~/jcu/dro-plone-extras
 
 
 echo
-echo -n " * compiling css... "
+echo " * compiling css... "
 scss scss/dro.css.scss dist/dro.css
 
 # echo
 # echo
-# echo -n " * uploading css... "
+# echo " * uploading css... "
 # curl --silent --insecure --request PUT 'https://research.jcu.edu.au/dro/dro_custom.css' \
 # --user dro-uploader:`cat ./dro-uploader-pass` \
 # --form "title=theme_css" \
@@ -22,12 +21,12 @@ scss scss/dro.css.scss dist/dro.css
 # --form "fileupload=@dist/dro.css;filename=dro.css;type=text/css" | grep 'aved change'
 
 echo
-echo -n " * compiling js... "
+echo " * compiling js... "
 cp js/dro.js dist/dro.js
 
 # echo
 # echo
-# echo -n " * uploading js... "
+# echo " * uploading js... "
 # curl --silent --request POST 'https://research.jcu.edu.au/dro/dro_custom.js' \
 # --user dro-uploader:`cat ./dro-uploader-pass` \
 # --form "title=theme_js" \
@@ -39,8 +38,7 @@ cp js/dro.js dist/dro.js
 
 echo
 popd
-echo -n " * done."
-echo
+echo " * done."
 
 
 
