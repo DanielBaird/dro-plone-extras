@@ -8,6 +8,7 @@ pushd ~/jcu/dro-plone-extras
 echo
 echo " * compiling css... "
 scss scss/dro.css.scss dist/dro.css
+autoprefixer --browsers "> 1%, last 2 versions, Firefox ESR, Opera 12.1" dist/dro.css
 
 # echo
 # echo

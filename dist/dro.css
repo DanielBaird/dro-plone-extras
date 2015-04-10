@@ -1,69 +1,177 @@
 /* DRO Resources */
+body {
+  background-color: #f4f4f4;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/dro-banner);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/dro-banner);
+  background-size: 100% 149px;
+  background-repeat: no-repeat;
+  background-position: top; }
+
+body.section-experiences {
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/experience-banner);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/experience-banner); }
+
+body.section-learning-and-teaching {
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/tandl-banner);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/tandl-banner); }
+
+body.section-research {
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/research-banner);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/research-banner); }
+
+#visual-portal-wrapper {
+  border: none;
+  background: #fff;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 149px, white 149px);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 149px, white 149px); }
+
+#portal-top {
+  background-color: transparent; }
+
 #portal-header {
+  margin: 0 -1.125% 0;
   background-image: url(/dro/media/dro-banner);
   background-position: center;
   background-size: cover; }
 
-iframe {
-  display: block;
-  margin: 10px auto; }
+body.section-experiences #portal-header {
+  background-image: url(/dro/media/experience-banner); }
+
+body.section-learning-and-teaching #portal-header {
+  background-image: url(/dro/media/tandl-banner); }
+
+body.section-research #portal-header {
+  background-image: url(/dro/media/research-banner); }
+
+.section-home:not(.template-atct_edit) #portal-globalnav {
+  visibility: hidden; }
+.section-home:not(.template-atct_edit) #viewlet-below-content-title {
+  display: none; }
+.section-home:not(.template-atct_edit) #parent-fieldname-description {
+  display: none; }
+.section-home:not(.template-atct_edit) #content .documentFirstHeading {
+  padding: 1em 0;
+  font-weight: 900;
+  text-align: center;
+  font-size: 50px;
+  font-size: calc(14px + 3vw); }
+.section-home:not(.template-atct_edit) #content ul.features {
+  background: #f4f4f4;
+  margin: 0 -2%;
+  padding: 60px 2%;
+  list-style: none;
+  text-align: center; }
+  .section-home:not(.template-atct_edit) #content ul.features li {
+    background-color: #fff;
+    line-height: 1.4;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 0 4%;
+    display: inline-block;
+    width: 27%;
+    min-width: 200px;
+    border: 1px solid #f4f4f4;
+    box-shadow: 0 0 3px #f4f4f4; }
+    .section-home:not(.template-atct_edit) #content ul.features li:first-of-type {
+      margin-left: 0; }
+    .section-home:not(.template-atct_edit) #content ul.features li:last-of-type {
+      margin-right: 0; }
+    .section-home:not(.template-atct_edit) #content ul.features li a:first-of-type {
+      margin: -15px -15px 5px;
+      letter-spacing: 1px;
+      display: block;
+      padding: 20px;
+      font-size: 150%;
+      font-weight: bold;
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-shadow: 0 0 4px #061, 0 0 8px #061; }
+    .section-home:not(.template-atct_edit) #content ul.features li.experience a:first-of-type {
+      background-image: url(/dro/media/experience-banner); }
+    .section-home:not(.template-atct_edit) #content ul.features li.tandl a:first-of-type {
+      background-image: url(/dro/media/tandl-banner); }
+    .section-home:not(.template-atct_edit) #content ul.features li.research a:first-of-type {
+      background-image: url(/dro/media/research-banner); }
+
+.flexbox .section-home:not(.template-atct_edit) #content ul.features {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .flexbox .section-home:not(.template-atct_edit) #content ul.features li {
+    width: auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 33%;
+        -ms-flex: 0 1 33%;
+            flex: 0 1 33%; }
 
 p.todo, td.todo, th.todo, h1.todo, h2.todo, h3.todo, h4.todo {
   background: #ffb; }
 
 p.todo {
-  padding: 1em; }
+  padding: 0.66em 1em;
+  opacity: 0.25;
+  -webkit-transition: opacity 0.5s;
+          transition: opacity 0.5s; }
+
+p.todo:hover {
+  opacity: 1; }
+
+iframe {
+  display: block;
+  margin: 10px auto; }
 
 p.todo.todo-pic {
-  height: 350px;
-  width: 90%;
+  opacity: 1;
   margin: 0 auto;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/700/100);
+  background-image: url(http://placecorgi.com/700/100);
   background-position: center;
   background-size: cover;
   padding: 1em;
-  color: white; }
+  color: white;
+  text-shadow: -6px 0 8px #000, -3px 0 8px #000, 0 0 8px #000, 3px 0 8px #000, 6px 0 8px #000;
+  height: 350px;
+  width: 90%; }
   p.todo.todo-pic a:link {
     color: #def !important; }
   p.todo.todo-pic a:visited {
     color: #bcf !important; }
-
-p.todo.todo-pic.todo-pic-small {
-  height: 100px;
-  width: 33%; }
-
-p.todo.todo-pic.todo-pic-strip {
-  height: 80px;
-  width: 90%; }
+  p.todo.todo-pic.todo-pic-small {
+    height: 100px;
+    width: 33%; }
+  p.todo.todo-pic.todo-pic-strip {
+    height: 80px;
+    width: 90%; }
 
 p.todo.todo-pic.todo-pic-0 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/390/300); }
+  background-image: url(http://placecorgi.com/390/300); }
 
 p.todo.todo-pic.todo-pic-1 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/190/310); }
+  background-image: url(http://placecorgi.com/190/310); }
 
 p.todo.todo-pic.todo-pic-2 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/290/320); }
+  background-image: url(http://placecorgi.com/290/320); }
 
 p.todo.todo-pic.todo-pic-3 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/390/330); }
+  background-image: url(http://placecorgi.com/390/330); }
 
 p.todo.todo-pic.todo-pic-4 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/490/340); }
+  background-image: url(http://placecorgi.com/490/340); }
 
 p.todo.todo-pic.todo-pic-5 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/590/350); }
+  background-image: url(http://placecorgi.com/590/350); }
 
 p.todo.todo-pic.todo-pic-6 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/690/360); }
+  background-image: url(http://placecorgi.com/690/360); }
 
 p.todo.todo-pic.todo-pic-7 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/790/370); }
+  background-image: url(http://placecorgi.com/790/370); }
 
 p.todo.todo-pic.todo-pic-8 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/890/380); }
+  background-image: url(http://placecorgi.com/890/380); }
 
 p.todo.todo-pic.todo-pic-9 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), transparent 5em), url(http://placecorgi.com/990/390); }
+  background-image: url(http://placecorgi.com/990/390); }
 
 /*# sourceMappingURL=dro.css.map */

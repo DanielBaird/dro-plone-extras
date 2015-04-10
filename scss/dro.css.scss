@@ -9,18 +9,155 @@
 // It will be included in every page in the /dro site.
 //
 
-/////////////////////////////////////////////////////////////////////
+$banner-image: /dro/media/dro-banner;
 
+$experience-banner: /dro/media/experience-banner;
+$tandl-banner: /dro/media/tandl-banner;
+$research-banner: /dro/media/research-banner;
+
+$banner-height: 149px;
+$page-bg: #f4f4f4;
+
+/////////////////////////////////////////////////// outer page layout
+
+$bg-frosty: linear-gradient(to right, rgba(255,255,255,0.7), rgba(255,255,255,0) 50%, rgba(255,255,255,0.7));
+body {
+	background-color: $page-bg;
+	// this is a two layer background: a translucent white layer
+	// over a width-stretched version of the banner image
+	background-image: $bg-frosty, url($banner-image);
+	background-size: 100% $banner-height;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+// custom banners for core pages
+body.section-experiences { background-image: $bg-frosty, url($experience-banner); }
+body.section-learning-and-teaching { background-image: $bg-frosty, url($tandl-banner); }
+body.section-research { background-image: $bg-frosty, url($research-banner); }
+
+// page wrapper
+#visual-portal-wrapper {
+	border: none;
+	background: #fff;
+	// override background if browser understands linear-gradient.
+	// this gives a transparent bg for $banner-height, pixels, then
+	// a white background from then on.
+	background: linear-gradient(to bottom,
+		rgba(255,255,255,0),
+		rgba(255,255,255,0) $banner-height,
+		rgba(255,255,255,1) $banner-height
+	);
+}
+
+////////////////////////////////////////////////////////////// header
+
+// the header wrapper
+#portal-top {
+	background-color: transparent;
+}
+// the header element that carries the banner image
 #portal-header {
-	background-image: url(/dro/media/dro-banner);
+	margin: 0 -1.125% 0;
+	background-image: url($banner-image);
 	background-position: center;
 	background-size: cover;
 }
 
-iframe {
-	display: block;
-	margin: 10px auto;
+// custom banners for core pages
+body.section-experiences #portal-header { background-image: url($experience-banner); }
+body.section-learning-and-teaching #portal-header { background-image: url($tandl-banner); }
+body.section-research #portal-header { background-image: url($research-banner); }
+
+////////////////////////////////////////////////////////// front page
+
+// main page, but not when you're editing it
+.section-home:not(.template-atct_edit) {
+	// this is the tab bar that does site navigation.
+	#portal-globalnav {
+		// can't use display: none because this is apparently the only
+		// element that gives the header its height.
+		visibility: hidden;
+	}
+
+	// the edit tagline "by Administrator -- last modified etc"
+	#viewlet-below-content-title { display: none; }
+
+	// the subheading/description
+	#parent-fieldname-description { display: none; }
+
+	// most of these things need this #content id wrapper to be
+	// specific enough to apply.
+	#content {
+		// the main heading
+		.documentFirstHeading {
+			// margin: 0 -2%;
+			// background: $page-bg;
+			padding: 1em 0;
+			font-weight: 900;
+			text-align: center;
+			font-size: 50px;
+			// override font-size if you understand calc() and vw
+			font-size: calc(14px + 3vw);
+		}
+
+		// the list of main features, NON flexbox version
+		ul.features {
+			background: $page-bg;
+			margin: 0 -2%;
+			padding: 60px 2%;
+			list-style: none;
+			text-align: center;
+			li {
+				$padding: 15px;
+				background-color: #fff;
+				line-height: 1.4;
+				box-sizing: border-box;
+				padding: $padding;
+				margin: 0 4%;
+				display: inline-block;
+				width: 27%;
+				min-width: 200px;
+				&:first-of-type { margin-left: 0 }
+				&:last-of-type { margin-right: 0 }
+
+				border: 1px solid $page-bg;
+				box-shadow: 0 0 3px $page-bg;
+
+				a:first-of-type {
+					margin: (-$padding) (-$padding) 5px;
+					letter-spacing: 1px;
+					display: block;
+					padding: 20px;
+					font-size: 150%;
+					font-weight: bold;
+					background-position: center;
+					background-size: cover;
+					color: white;
+					text-shadow: 0 0 4px #061, 0 0 8px #061;
+				}
+				&.experience a:first-of-type { background-image: url($experience-banner); }
+				&.tandl      a:first-of-type { background-image: url($tandl-banner); }
+				&.research   a:first-of-type { background-image: url($research-banner); }
+			}
+
+		}
+	}
 }
+
+.flexbox .section-home:not(.template-atct_edit) {
+	#content {
+		// the list of main features, FLEXBOX version
+		ul.features {
+			display: flex;
+			li {
+				width: auto;
+				flex: 0 1 33%;
+			}
+		}
+	}
+}
+
 
 ///////////////////////////////////////////////////// todo paragraphs
 
@@ -28,39 +165,49 @@ p.todo, td.todo, th.todo, h1.todo, h2.todo, h3.todo, h4.todo {
 	background: #ffb;
 }
 p.todo {
-	padding: 1em;
+	padding: 0.66em 1em;
+	opacity: 0.25;
+	transition: opacity 0.5s;
 }
+p.todo:hover {
+	opacity: 1;
+}
+
+// corgi video iframe
+iframe {
+	display: block;
+	margin: 10px auto;
+}
+
+// pic todos
 p.todo.todo-pic {
-	height: 350px;
-	width: 90%;
+	opacity: 1;
 	margin: 0 auto;
-	background-image:
-		linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em),
-		url(http://placecorgi.com/700/100);
+	background-image: url(http://placecorgi.com/700/100);
 	background-position: center;
 	background-size: cover;
 	padding: 1em;
 	color: white;
+	text-shadow: -6px 0 8px #000, -3px 0 8px #000, 0 0 8px #000, 3px 0 8px #000, 6px 0 8px #000;
+
 	a:link { color: #def ! important; }
 	a:visited { color: #bcf ! important; }
+
+	                    height: 350px;  width: 90%;
+	&.todo-pic-small {  height: 100px;  width: 33%; }
+	&.todo-pic-strip {  height:  80px;  width: 90%; }
 }
-p.todo.todo-pic.todo-pic-small {
-	height: 100px;
-	width: 33%;
-}
-p.todo.todo-pic.todo-pic-strip {
-	height: 80px;
-	width: 90%;
-}
-p.todo.todo-pic.todo-pic-0 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/390/300); }
-p.todo.todo-pic.todo-pic-1 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/190/310); }
-p.todo.todo-pic.todo-pic-2 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/290/320); }
-p.todo.todo-pic.todo-pic-3 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/390/330); }
-p.todo.todo-pic.todo-pic-4 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/490/340); }
-p.todo.todo-pic.todo-pic-5 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/590/350); }
-p.todo.todo-pic.todo-pic-6 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/690/360); }
-p.todo.todo-pic.todo-pic-7 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/790/370); }
-p.todo.todo-pic.todo-pic-8 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/890/380); }
-p.todo.todo-pic.todo-pic-9 { background-image: linear-gradient(to bottom, rgba(0,0,0, 0.66), rgba(0,0,0, 0) 5em), url(http://placecorgi.com/990/390); }
+
+
+p.todo.todo-pic.todo-pic-0 { background-image: url(http://placecorgi.com/390/300); }
+p.todo.todo-pic.todo-pic-1 { background-image: url(http://placecorgi.com/190/310); }
+p.todo.todo-pic.todo-pic-2 { background-image: url(http://placecorgi.com/290/320); }
+p.todo.todo-pic.todo-pic-3 { background-image: url(http://placecorgi.com/390/330); }
+p.todo.todo-pic.todo-pic-4 { background-image: url(http://placecorgi.com/490/340); }
+p.todo.todo-pic.todo-pic-5 { background-image: url(http://placecorgi.com/590/350); }
+p.todo.todo-pic.todo-pic-6 { background-image: url(http://placecorgi.com/690/360); }
+p.todo.todo-pic.todo-pic-7 { background-image: url(http://placecorgi.com/790/370); }
+p.todo.todo-pic.todo-pic-8 { background-image: url(http://placecorgi.com/890/380); }
+p.todo.todo-pic.todo-pic-9 { background-image: url(http://placecorgi.com/990/390); }
 
 

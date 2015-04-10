@@ -12,7 +12,7 @@ It will run on every page in the /dro/ site.
 
 jQuery(function ($) {
 
-	// look for p tags that start with TODO
+	// look for p tags and td tags that start with TODO
 	var $ptags = $('#content p, #content td');
 
 	var todoPrefix = 'todo';
@@ -27,7 +27,8 @@ jQuery(function ($) {
 			if (pText.indexOf(' pic') != -1) {
 				// then it's a pic todo
 				$p.addClass('todo-pic');
-				$p.addClass('todo-pic-' + (Math.floor(Math.random() * 10)));
+				// $p.addClass('todo-pic-' + (Math.floor(Math.random() * 10)));
+				$p.addClass('todo-pic-' + (index % 10));
 
 				if (pText.indexOf('small') != -1) {
 					// it's a small pic
