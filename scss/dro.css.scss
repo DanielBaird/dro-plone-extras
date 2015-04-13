@@ -11,6 +11,8 @@
 
 $banner-image: /dro/media/dro-banner;
 
+$title-color: #096;
+
 $experience-banner: /dro/media/experience-banner;
 $tandl-banner: /dro/media/tandl-banner;
 $research-banner: /dro/media/research-banner;
@@ -18,15 +20,23 @@ $research-banner: /dro/media/research-banner;
 $banner-height: 149px;
 $page-bg: #f4f4f4;
 
+@mixin full-width-no-bg {
+	margin: 0 -2%;
+	padding: 0 2%;
+	background: $page-bg;
+}
+
 /////////////////////////////////////////////////// outer page layout
 
 $bg-frosty: linear-gradient(to right, rgba(255,255,255,0.7), rgba(255,255,255,0) 50%, rgba(255,255,255,0.7));
+$bg-frosty: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 50%, rgba(0,0,0,1));
+$bg-frosty: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 50%, rgba(255,255,255,1));
 body {
 	background-color: $page-bg;
 	// this is a two layer background: a translucent white layer
 	// over a width-stretched version of the banner image
 	background-image: $bg-frosty, url($banner-image);
-	background-size: 100% $banner-height;
+	background-size: 150% $banner-height;
 	background-repeat: no-repeat;
 	background-position: top;
 }
@@ -86,77 +96,117 @@ body.section-research #portal-header { background-image: url($research-banner); 
 	// the subheading/description
 	#parent-fieldname-description { display: none; }
 
+	// various parts show white background even when they're empty.
+	#portal-columns { margin-top: 0; }
+	#content-core   { margin-top: 0; }
+	#content        { margin-top: 0; }
+
 	// most of these things need this #content id wrapper to be
 	// specific enough to apply.
 	#content {
 		// the main heading
 		.documentFirstHeading {
-			// margin: 0 -2%;
-			// background: $page-bg;
+			@include full-width-no-bg;
 			padding: 1em 0;
-			font-weight: 900;
+			font-weight: 100;
 			text-align: center;
 			font-size: 50px;
 			// override font-size if you understand calc() and vw
 			font-size: calc(14px + 3vw);
 		}
 
-		// the list of main features, NON flexbox version
-		ul.features {
-			background: $page-bg;
-			margin: 0 -2%;
-			padding: 60px 2%;
-			list-style: none;
+		div.fancywrapper {
+			@include full-width-no-bg;
 			text-align: center;
+		}
+		div.video {
+			display: inline-block;
+			box-sizing: border-box;
+			vertical-align: top;
+			width: 58%;
+			min-width: 300px;
+			margin-right: 0.5%;
+		}
+
+		// the list of main features, NON flexbox version
+		$padding: 15px;
+		ul.features {
+			display: inline-block;
+			box-sizing: border-box;
+			vertical-align: top;
+			width: 40%;
+			min-width: 300px;
+			padding: 0;
+			margin: 0;
+			margin-left: 0.5%;
+			list-style: none;
+			text-align: right;
+
 			li {
-				$padding: 15px;
+				padding: $padding;
+				margin-bottom: $padding;
+				box-sizing: border-box;
 				background-color: #fff;
 				line-height: 1.4;
-				box-sizing: border-box;
-				padding: $padding;
-				margin: 0 4%;
-				display: inline-block;
-				width: 27%;
-				min-width: 200px;
-				&:first-of-type { margin-left: 0 }
-				&:last-of-type { margin-right: 0 }
 
-				border: 1px solid $page-bg;
 				box-shadow: 0 0 3px $page-bg;
 
-				a:first-of-type {
-					margin: (-$padding) (-$padding) 5px;
-					letter-spacing: 1px;
-					display: block;
-					padding: 20px;
-					font-size: 150%;
-					font-weight: bold;
+				// rounded corners
+				position: relative;
+				$radius: 50px;
+				min-height: $radius + $radius + $padding + 2px;
+
+				border-bottom-left-radius: $radius + $padding/2;
+				padding-left: $radius + $radius + $padding/2;
+
+				border-top-right-radius: $radius/2 + $padding/2;
+				padding-right: $radius/4 + $padding/2;
+				&:before {
+					content: '';
+					// z-index: 1;
+					position: absolute;
+					box-sizing: border-box;
+					top: $padding/2;
+					left: $padding/2;
+					height: $radius + $radius;
+					width: $radius + $radius;
+					border-radius: $radius;
+					border-top-left-radius: 0;
 					background-position: center;
 					background-size: cover;
-					color: white;
-					text-shadow: 0 0 4px #061, 0 0 8px #061;
 				}
-				&.experience a:first-of-type { background-image: url($experience-banner); }
-				&.tandl      a:first-of-type { background-image: url($tandl-banner); }
-				&.research   a:first-of-type { background-image: url($research-banner); }
+
+				// the first link is the "main" title link
+				a:first-of-type {
+					position: relative;
+					display: block;
+					padding: $padding/2 0;
+					font-size: 140%;
+					color: $title-color;
+					text-shadow: 0 0 4px #fff, 0 0 7px #fff, 0 0 10px #fff;
+				}
+				&.experience:before { background-image: url($experience-banner); }
+				&.tandl:before { background-image: url($tandl-banner); }
+				&.research:before { background-image: url($research-banner); }
 			}
 
 		}
 	}
 }
 
-.flexbox .section-home:not(.template-atct_edit) {
-	#content {
-		// the list of main features, FLEXBOX version
-		ul.features {
-			display: flex;
-			li {
-				width: auto;
-				flex: 0 1 33%;
-			}
-		}
-	}
-}
+// .flexbox .section-home:not(.template-atct_edit) {
+// 	#content {
+// 		// the list of main features, FLEXBOX version
+// 		ul.features {
+// 			display: flex;
+// 			flex-direction: column;
+// 			li {
+// 				width: auto;
+// 				flex: 0 1 33%;
+// 			}
+// 		}
+// 	}
+// }
 
 
 ///////////////////////////////////////////////////// todo paragraphs
@@ -171,12 +221,6 @@ p.todo {
 }
 p.todo:hover {
 	opacity: 1;
-}
-
-// corgi video iframe
-iframe {
-	display: block;
-	margin: 10px auto;
 }
 
 // pic todos

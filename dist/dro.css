@@ -1,23 +1,23 @@
 /* DRO Resources */
 body {
   background-color: #f4f4f4;
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/dro-banner);
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/dro-banner);
-  background-size: 100% 149px;
+  background-image: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/dro-banner);
+  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/dro-banner);
+  background-size: 150% 149px;
   background-repeat: no-repeat;
   background-position: top; }
 
 body.section-experiences {
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/experience-banner);
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/experience-banner); }
+  background-image: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/experience-banner);
+  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/experience-banner); }
 
 body.section-learning-and-teaching {
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/tandl-banner);
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/tandl-banner); }
+  background-image: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/tandl-banner);
+  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/tandl-banner); }
 
 body.section-research {
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/research-banner);
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.7)), url(/dro/media/research-banner); }
+  background-image: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/research-banner);
+  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/research-banner); }
 
 #visual-portal-wrapper {
   border: none;
@@ -49,62 +49,82 @@ body.section-research #portal-header {
   display: none; }
 .section-home:not(.template-atct_edit) #parent-fieldname-description {
   display: none; }
+.section-home:not(.template-atct_edit) #portal-columns {
+  margin-top: 0; }
+.section-home:not(.template-atct_edit) #content-core {
+  margin-top: 0; }
+.section-home:not(.template-atct_edit) #content {
+  margin-top: 0; }
 .section-home:not(.template-atct_edit) #content .documentFirstHeading {
+  margin: 0 -2%;
+  padding: 0 2%;
+  background: #f4f4f4;
   padding: 1em 0;
-  font-weight: 900;
+  font-weight: 100;
   text-align: center;
   font-size: 50px;
   font-size: calc(14px + 3vw); }
-.section-home:not(.template-atct_edit) #content ul.features {
-  background: #f4f4f4;
+.section-home:not(.template-atct_edit) #content div.fancywrapper {
   margin: 0 -2%;
-  padding: 60px 2%;
-  list-style: none;
+  padding: 0 2%;
+  background: #f4f4f4;
   text-align: center; }
+.section-home:not(.template-atct_edit) #content div.video {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 58%;
+  min-width: 300px;
+  margin-right: 0.5%; }
+.section-home:not(.template-atct_edit) #content ul.features {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 40%;
+  min-width: 300px;
+  padding: 0;
+  margin: 0;
+  margin-left: 0.5%;
+  list-style: none;
+  text-align: right; }
   .section-home:not(.template-atct_edit) #content ul.features li {
+    padding: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
     background-color: #fff;
     line-height: 1.4;
-    box-sizing: border-box;
-    padding: 15px;
-    margin: 0 4%;
-    display: inline-block;
-    width: 27%;
-    min-width: 200px;
-    border: 1px solid #f4f4f4;
-    box-shadow: 0 0 3px #f4f4f4; }
-    .section-home:not(.template-atct_edit) #content ul.features li:first-of-type {
-      margin-left: 0; }
-    .section-home:not(.template-atct_edit) #content ul.features li:last-of-type {
-      margin-right: 0; }
-    .section-home:not(.template-atct_edit) #content ul.features li a:first-of-type {
-      margin: -15px -15px 5px;
-      letter-spacing: 1px;
-      display: block;
-      padding: 20px;
-      font-size: 150%;
-      font-weight: bold;
+    box-shadow: 0 0 3px #f4f4f4;
+    position: relative;
+    min-height: 117px;
+    border-bottom-left-radius: 57.5px;
+    padding-left: 107.5px;
+    border-top-right-radius: 32.5px;
+    padding-right: 20px; }
+    .section-home:not(.template-atct_edit) #content ul.features li:before {
+      content: '';
+      position: absolute;
+      box-sizing: border-box;
+      top: 7.5px;
+      left: 7.5px;
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+      border-top-left-radius: 0;
       background-position: center;
-      background-size: cover;
-      color: white;
-      text-shadow: 0 0 4px #061, 0 0 8px #061; }
-    .section-home:not(.template-atct_edit) #content ul.features li.experience a:first-of-type {
+      background-size: cover; }
+    .section-home:not(.template-atct_edit) #content ul.features li a:first-of-type {
+      position: relative;
+      display: block;
+      padding: 7.5px 0;
+      font-size: 140%;
+      color: #096;
+      text-shadow: 0 0 4px #fff, 0 0 7px #fff, 0 0 10px #fff; }
+    .section-home:not(.template-atct_edit) #content ul.features li.experience:before {
       background-image: url(/dro/media/experience-banner); }
-    .section-home:not(.template-atct_edit) #content ul.features li.tandl a:first-of-type {
+    .section-home:not(.template-atct_edit) #content ul.features li.tandl:before {
       background-image: url(/dro/media/tandl-banner); }
-    .section-home:not(.template-atct_edit) #content ul.features li.research a:first-of-type {
+    .section-home:not(.template-atct_edit) #content ul.features li.research:before {
       background-image: url(/dro/media/research-banner); }
-
-.flexbox .section-home:not(.template-atct_edit) #content ul.features {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .flexbox .section-home:not(.template-atct_edit) #content ul.features li {
-    width: auto;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 33%;
-        -ms-flex: 0 1 33%;
-            flex: 0 1 33%; }
 
 p.todo, td.todo, th.todo, h1.todo, h2.todo, h3.todo, h4.todo {
   background: #ffb; }
@@ -117,10 +137,6 @@ p.todo {
 
 p.todo:hover {
   opacity: 1; }
-
-iframe {
-  display: block;
-  margin: 10px auto; }
 
 p.todo.todo-pic {
   opacity: 1;
