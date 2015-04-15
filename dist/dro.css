@@ -3,27 +3,18 @@ body {
   background-color: #f4f4f4;
   background-image: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/dro-banner);
   background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/dro-banner);
-  background-size: 150% 149px;
+  background-size: 150% 164px;
   background-repeat: no-repeat;
   background-position: top; }
-
-body.section-experiences {
-  background-image: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/experience-banner);
-  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/experience-banner); }
-
-body.section-learning-and-teaching {
-  background-image: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/tandl-banner);
-  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/tandl-banner); }
-
-body.section-research {
-  background-image: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/research-banner);
-  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/research-banner); }
 
 #visual-portal-wrapper {
   border: none;
   background: #fff;
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 149px, white 149px);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 149px, white 149px); }
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 165px, white 165px);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 165px, white 165px); }
+
+#portal-breadcrumbs {
+  display: none; }
 
 #portal-top {
   background-color: transparent; }
@@ -34,17 +25,104 @@ body.section-research {
   background-position: center;
   background-size: cover; }
 
-body.section-experiences #portal-header {
-  background-image: url(/dro/media/experience-banner); }
+ul#portal-globalnav {
+  background: -webkit-linear-gradient(top, rgba(153, 204, 102, 0.1), rgba(153, 204, 102, 0.9));
+  background: linear-gradient(to bottom, rgba(153, 204, 102, 0.1), rgba(153, 204, 102, 0.9));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
+  font-size: inherit;
+  color: inherit;
+  white-space: nowrap;
+  height: 42px;
+  overflow-x: auto;
+  overflow-y: hidden; }
+  ul#portal-globalnav li {
+    padding: 0; }
+    ul#portal-globalnav li a {
+      margin: 0;
+      padding: 1px 2em 0;
+      line-height: 41px;
+      height: 41px;
+      font-weight: bold;
+      text-shadow: 0 0 4px #9c6;
+      opacity: 0.7;
+      -webkit-transition: 0.1s;
+              transition: 0.1s;
+      color: inherit; }
+    ul#portal-globalnav li.selected a {
+      opacity: 1;
+      text-shadow: none;
+      color: inherit; }
+    ul#portal-globalnav li a:hover {
+      opacity: 0.9;
+      text-shadow: none;
+      color: inherit; }
 
-body.section-learning-and-teaching #portal-header {
-  background-image: url(/dro/media/tandl-banner); }
+.section-learning-and-teaching #content-core img:first-of-type, .section-experiences #content-core img:first-of-type, .section-research #content-core img:first-of-type {
+  float: left;
+  margin: 0 2em 1em 0;
+  width: 320px;
+  height: 320px;
+  border: none;
+  border-top-right-radius: 160px;
+  border-bottom-right-radius: 160px;
+  border-bottom-left-radius: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-shape-outside: margin-box;
+          shape-outside: margin-box; }
 
-body.section-research #portal-header {
-  background-image: url(/dro/media/research-banner); }
+.section-learning-and-teaching #content-core ol:first-of-type, .section-experiences #content-core ol:first-of-type, .section-research #content-core ol:first-of-type {
+  margin-left: 0;
+  width: 100%;
+  text-align: center;
+  clear: both; }
+  .section-learning-and-teaching #content-core ol:first-of-type li, .section-experiences #content-core ol:first-of-type li, .section-research #content-core ol:first-of-type li {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: left;
+    width: 12em;
+    min-height: 12em;
+    padding: 2em;
+    margin: 2em 1em;
+    border: 1px solid rgba(153, 204, 102, 0.5);
+    background: -webkit-linear-gradient(285deg, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0) 5em);
+    background: linear-gradient(165deg, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0) 5em);
+    border-radius: 2px; }
+    .section-learning-and-teaching #content-core ol:first-of-type li:before, .section-experiences #content-core ol:first-of-type li:before, .section-research #content-core ol:first-of-type li:before {
+      content: 'next...';
+      font-size: 150%;
+      color: white;
+      text-shadow: 0 0 1px #9c6, 0 0 2px #9c6;
+      position: absolute;
+      top: -0.25em;
+      left: -0.25em;
+      -webkit-transform: rotate(-15deg);
+          -ms-transform: rotate(-15deg);
+              transform: rotate(-15deg); }
+    .section-learning-and-teaching #content-core ol:first-of-type li a:last-of-type, .section-experiences #content-core ol:first-of-type li a:last-of-type, .section-research #content-core ol:first-of-type li a:last-of-type {
+      font-size: 90%;
+      float: right;
+      font-style: italic;
+      white-space: nowrap;
+      margin: 0.5em 0 0 0.5em; }
+      .section-learning-and-teaching #content-core ol:first-of-type li a:last-of-type:after, .section-experiences #content-core ol:first-of-type li a:last-of-type:after, .section-research #content-core ol:first-of-type li a:last-of-type:after {
+        content: ' \00bb'; }
+    .section-learning-and-teaching #content-core ol:first-of-type li a:first-of-type, .section-experiences #content-core ol:first-of-type li a:first-of-type, .section-research #content-core ol:first-of-type li a:first-of-type {
+      text-align: center;
+      font-weight: bold;
+      font-size: 120%;
+      display: block;
+      height: 3em;
+      margin: 0 auto 0.25em;
+      padding: 0 0 0.25em;
+      float: none;
+      font-style: normal;
+      white-space: normal; }
+      .section-learning-and-teaching #content-core ol:first-of-type li a:first-of-type:after, .section-experiences #content-core ol:first-of-type li a:first-of-type:after, .section-research #content-core ol:first-of-type li a:first-of-type:after {
+        display: none; }
 
-.section-home:not(.template-atct_edit) #portal-globalnav {
-  visibility: hidden; }
 .section-home:not(.template-atct_edit) #viewlet-below-content-title {
   display: none; }
 .section-home:not(.template-atct_edit) #parent-fieldname-description {
@@ -121,8 +199,8 @@ body.section-research #portal-header {
       text-shadow: 0 0 4px #fff, 0 0 7px #fff, 0 0 10px #fff; }
     .section-home:not(.template-atct_edit) #content ul.features li.experience:before {
       background-image: url(/dro/media/experience-banner); }
-    .section-home:not(.template-atct_edit) #content ul.features li.tandl:before {
-      background-image: url(/dro/media/tandl-banner); }
+    .section-home:not(.template-atct_edit) #content ul.features li.landt:before {
+      background-image: url(/dro/media/landt-banner); }
     .section-home:not(.template-atct_edit) #content ul.features li.research:before {
       background-image: url(/dro/media/research-banner); }
 
@@ -148,7 +226,7 @@ p.todo.todo-pic {
   color: white;
   text-shadow: -6px 0 8px #000, -3px 0 8px #000, 0 0 8px #000, 3px 0 8px #000, 6px 0 8px #000;
   height: 350px;
-  width: 90%; }
+  width: 95%; }
   p.todo.todo-pic a:link {
     color: #def !important; }
   p.todo.todo-pic a:visited {
@@ -189,5 +267,4 @@ p.todo.todo-pic.todo-pic-8 {
 
 p.todo.todo-pic.todo-pic-9 {
   background-image: url(http://placecorgi.com/990/390); }
-
 /*# sourceMappingURL=dro.css.map */

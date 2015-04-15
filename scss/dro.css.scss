@@ -9,42 +9,55 @@
 // It will be included in every page in the /dro site.
 //
 
+
+$title-color: #096; // colour of title text.  Matches theme colour
+$bg-highlight: #9c6; // used in tab bgs, etc.  Matches theme color
+$page-bg: #f4f4f4; // page background colour
+
+// banners & branding images for site sections
 $banner-image: /dro/media/dro-banner;
 
-$title-color: #096;
-
 $experience-banner: /dro/media/experience-banner;
-$tandl-banner: /dro/media/tandl-banner;
+$landt-banner: /dro/media/landt-banner;
 $research-banner: /dro/media/research-banner;
 
-$banner-height: 149px;
-$page-bg: #f4f4f4;
+$experience-square: /dro/media/experience-banner;
+$landt-square: /dro/media/landt-banner;
+$research-square: /dro/media/research-banner;
 
+$logo-height: 124px; // height of JCU logo in banner
+$nav-tab-height: 41px; // height of nav tabs
+$banner-height: $logo-height + $nav-tab-height; // banner height
+
+// use this mixin to fake-remove the white content background and
+// show the grey page background instead.
 @mixin full-width-no-bg {
 	margin: 0 -2%;
 	padding: 0 2%;
 	background: $page-bg;
 }
 
+
 /////////////////////////////////////////////////// outer page layout
 
-$bg-frosty: linear-gradient(to right, rgba(255,255,255,0.7), rgba(255,255,255,0) 50%, rgba(255,255,255,0.7));
-$bg-frosty: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 50%, rgba(0,0,0,1));
+// give a frosty background (white layer with opacity gradient from
+// 1 at the left and right edges, opacity 0 in the middle)
 $bg-frosty: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 50%, rgba(255,255,255,1));
 body {
 	background-color: $page-bg;
 	// this is a two layer background: a translucent white layer
 	// over a width-stretched version of the banner image
 	background-image: $bg-frosty, url($banner-image);
-	background-size: 150% $banner-height;
+	background-size: 150% $banner-height - 1px;
 	background-repeat: no-repeat;
 	background-position: top;
 }
 
 // custom banners for core pages
-body.section-experiences { background-image: $bg-frosty, url($experience-banner); }
-body.section-learning-and-teaching { background-image: $bg-frosty, url($tandl-banner); }
-body.section-research { background-image: $bg-frosty, url($research-banner); }
+// Update: Jeremy says use the same banner everywhere
+// body.section-experiences { background-image: $bg-frosty, url($experience-banner); }
+// body.section-learning-and-teaching { background-image: $bg-frosty, url($landt-banner); }
+// body.section-research { background-image: $bg-frosty, url($research-banner); }
 
 // page wrapper
 #visual-portal-wrapper {
@@ -59,6 +72,8 @@ body.section-research { background-image: $bg-frosty, url($research-banner); }
 		rgba(255,255,255,1) $banner-height
 	);
 }
+
+#portal-breadcrumbs { display: none; }
 
 ////////////////////////////////////////////////////////////// header
 
@@ -75,9 +90,149 @@ body.section-research { background-image: $bg-frosty, url($research-banner); }
 }
 
 // custom banners for core pages
-body.section-experiences #portal-header { background-image: url($experience-banner); }
-body.section-learning-and-teaching #portal-header { background-image: url($tandl-banner); }
-body.section-research #portal-header { background-image: url($research-banner); }
+// Update: Jeremy says use the same banner everywhere
+// body.section-experiences #portal-header { background-image: url($experience-banner); }
+// body.section-learning-and-teaching #portal-header { background-image: url($landt-banner); }
+// body.section-research #portal-header { background-image: url($research-banner); }
+
+
+///////////////////////////////////////////////////// navigation tabs
+
+ul#portal-globalnav {
+	background: linear-gradient(to bottom, rgba($bg-highlight, 0.1), rgba($bg-highlight, 0.9));
+	background: linear-gradient(to bottom, rgba(255,255,255, 0.2), rgba(255,255,255, 0.8));
+	font-size: inherit;
+	color: inherit;
+	// fix the height and scroll horizontally if necessary
+	white-space: nowrap;
+	height: $nav-tab-height + 1px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	li {
+		padding: 0;
+		a {
+			margin: 0;
+			padding: 1px 2em 0;
+			line-height: $nav-tab-height;
+			height: $nav-tab-height;
+			font-weight: bold;
+			text-shadow: 0 0 4px $bg-highlight;
+			opacity: 0.7;
+			transition: 0.1s;
+			color: inherit;
+		}
+		&.selected a {
+			opacity: 1;
+			text-shadow: none;
+			color: inherit;
+		}
+		a:hover {
+			opacity: 0.9;
+			text-shadow: none;
+			color: inherit;
+		}
+	}
+}
+
+
+/////////////////////////////////////////////////////////////////////
+// specific page styles /////////////////////////////////////////////
+
+///////////////////////////// major pages (experience, t&l, research)
+
+@mixin big-teardrop-image {
+	$radius: 160px;
+	float: left;
+	margin: 0 2em 1em 0;
+	width: $radius + $radius;
+	height: $radius + $radius;
+	border: none;
+	border-top-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
+	// so good browsers show a non-square image without distorting its aspect ratio
+	object-fit: cover;
+	// so good browsers can fit text along the curve of the teardrop
+	// (good luck with your syntax highlighting)
+	shape-outside: margin-box;
+}
+
+.section-learning-and-teaching, .section-experiences, .section-research {
+	#content-core img:first-of-type {
+		@include big-teardrop-image;
+	}
+}
+
+////////////////////////////////////////// link points on major pages
+
+@mixin link-list {
+	width: 100%;
+	text-align: center;
+	clear: both;
+}
+@mixin link-list-item {
+	$color: #9c6;
+	$gap: 2em;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	text-align: left;
+	width: 12em;
+	min-height: 12em;
+	padding: $gap;
+	margin: $gap $gap/2;
+
+	border: 1px solid rgba($color, 0.5);
+	// border-radius: 1.5 * $gap;
+	// border-top-left-radius: 0;
+	background: linear-gradient(165deg, rgba($color, 0.2), rgba($color, 0) 5em);
+	border-radius: 2px;
+
+	&:before {
+		content: 'next...';
+		font-size: 150%;
+		color: white;
+		text-shadow: 0 0 1px $color, 0 0 2px $color;
+		position: absolute;
+		top: -0.25em;
+		left: -0.25em;
+		transform: rotate(-15deg);
+	}
+
+	a:last-of-type {
+		// the last link is the "more" link
+		font-size: 90%;
+		float: right;
+		font-style: italic;
+		white-space: nowrap;
+		&:after { content: ' \00bb'; }
+		margin: 0.5em 0 0 0.5em;
+	}
+	a:first-of-type {
+		// the first link is the header
+		text-align: center;
+		font-weight: bold;
+		font-size: 120%;
+		display: block;
+		height: 3em;
+		margin: 0 auto 0.25em;
+		padding: 0 0 0.25em;
+		float: none;
+		font-style: normal;
+		white-space: normal;
+		&:after { display: none };
+	}
+}
+
+.section-learning-and-teaching, .section-experiences, .section-research {
+	#content-core ol:first-of-type {
+		margin-left: 0;
+		@include link-list;
+		li {
+			@include link-list-item;
+		}
+	}
+}
 
 ////////////////////////////////////////////////////////// front page
 
@@ -87,7 +242,7 @@ body.section-research #portal-header { background-image: url($research-banner); 
 	#portal-globalnav {
 		// can't use display: none because this is apparently the only
 		// element that gives the header its height.
-		visibility: hidden;
+		// visibility: hidden;
 	}
 
 	// the edit tagline "by Administrator -- last modified etc"
@@ -186,7 +341,7 @@ body.section-research #portal-header { background-image: url($research-banner); 
 					text-shadow: 0 0 4px #fff, 0 0 7px #fff, 0 0 10px #fff;
 				}
 				&.experience:before { background-image: url($experience-banner); }
-				&.tandl:before { background-image: url($tandl-banner); }
+				&.landt:before { background-image: url($landt-banner); }
 				&.research:before { background-image: url($research-banner); }
 			}
 
@@ -223,7 +378,7 @@ p.todo:hover {
 	opacity: 1;
 }
 
-// pic todos
+// todos that mention "pic"
 p.todo.todo-pic {
 	opacity: 1;
 	margin: 0 auto;
@@ -237,12 +392,12 @@ p.todo.todo-pic {
 	a:link { color: #def ! important; }
 	a:visited { color: #bcf ! important; }
 
-	                    height: 350px;  width: 90%;
+						height: 350px;  width: 95%;
 	&.todo-pic-small {  height: 100px;  width: 33%; }
 	&.todo-pic-strip {  height:  80px;  width: 90%; }
 }
 
-
+// some more-or-less random corgi pics..
 p.todo.todo-pic.todo-pic-0 { background-image: url(http://placecorgi.com/390/300); }
 p.todo.todo-pic.todo-pic-1 { background-image: url(http://placecorgi.com/190/310); }
 p.todo.todo-pic.todo-pic-2 { background-image: url(http://placecorgi.com/290/320); }
