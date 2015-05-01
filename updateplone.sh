@@ -23,7 +23,7 @@ autoprefixer --browsers "> 1%, last 2 versions, Firefox ESR, Opera 12.1" dist/dr
 
 echo
 echo " * compiling js... "
-cp js/dro.js dist/dro.js
+cat js/dro-calendar.js js/dro.js > dist/dro.js
 
 # echo
 # echo

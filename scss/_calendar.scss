@@ -1,0 +1,183 @@
+
+//
+// calendar for DRO site display.
+//
+.dro-calendar {
+
+	$titles-width: 10em;
+	$block-height: 2.4em;
+	$line-height: 1.4 * $block-height;
+	$extra-scrollbar-pad: 1em;
+
+	$key-color: #039;
+	$good-block-color: #0b3;
+	$normal-block-color: #aa3;
+	$alert-block-color: #a33;
+
+	margin: 1em 0;
+	padding: 0;
+	box-shadow: 0 0 5px #ccc;
+	overflow: hidden;
+
+	// start at three-calendars-high
+	height: 3 * $line-height + $extra-scrollbar-pad;
+	transition: height 0.5s;
+
+	&.cals-1  { height:  1 * $line-height + $extra-scrollbar-pad; };
+	&.cals-2  { height:  2 * $line-height + $extra-scrollbar-pad; };
+	&.cals-3  { height:  3 * $line-height + $extra-scrollbar-pad; };
+	&.cals-4  { height:  4 * $line-height + $extra-scrollbar-pad; };
+	&.cals-5  { height:  5 * $line-height + $extra-scrollbar-pad; };
+	&.cals-6  { height:  6 * $line-height + $extra-scrollbar-pad; };
+	&.cals-7  { height:  7 * $line-height + $extra-scrollbar-pad; };
+	&.cals-8  { height:  8 * $line-height + $extra-scrollbar-pad; };
+	&.cals-9  { height:  9 * $line-height + $extra-scrollbar-pad; };
+	&.cals-10 { height: 10 * $line-height + $extra-scrollbar-pad; };
+	&.cals-11 { height: 11 * $line-height + $extra-scrollbar-pad; };
+	&.cals-12 { height: 12 * $line-height + $extra-scrollbar-pad; };
+	&.cals-13 { height: 13 * $line-height + $extra-scrollbar-pad; };
+
+	.droc-wrap {
+		* { box-sizing: border-box; }
+
+		// font-family: sans-serif;
+
+		width: 100%;
+		position: relative;
+		margin: 0;
+
+		.droc-left, .droc-right {
+			position: absolute;
+			height: 0.9 * $line-height;
+			width: $line-height / 2;
+			top: 0.05 * $line-height;
+			border: 0;
+			font-size: inherit;
+			line-height: 0.8 * $line-height;
+			text-align: center;
+			color: white;
+			background: $key-color;
+
+			&:hover { background: lighten($key-color, 10%); }
+		}
+		.droc-left  { left: $titles-width + 0.05 * $line-height; }
+		.droc-right { right: 0.05 * $line-height; }
+
+		// block containing titles
+		.droc-titles {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: $titles-width;
+			color: white;
+			background-image: repeating-linear-gradient(to bottom, rgba($key-color, 0.8), rgba($key-color, 1) $line-height);
+
+			.droc-title {
+				display: block;
+				height: $line-height;
+				padding-left: 0.5em;
+				line-height: $line-height;
+				white-space: nowrap;
+				overflow: ellipsis;
+			}
+		}
+
+		// block containing calendar rows
+		.droc-cals {
+			position: absolute;
+			left: $titles-width;
+			top: 0;
+			right: 0;
+			padding-bottom: $extra-scrollbar-pad;
+			overflow-x: scroll;
+			overflow-y: hidden;
+			background-image: repeating-linear-gradient(to bottom, rgba($key-color, 0.05), rgba($key-color, 0) $line-height);
+		}
+
+		.droc-cal {
+			display: block;
+			height: $line-height;
+			line-height: $line-height;
+			white-space: nowrap;
+		}
+
+		.droc-block {
+			display: inline-block;
+
+			// vertically centered
+			position: relative;
+			top: ($line-height - $block-height) / 2;
+
+			text-align: center;
+			height: $block-height;
+			line-height: $block-height;
+			overflow: hidden;
+			border-radius: 4px;
+			border: 0 solid #ccc;
+			border-width: 0 1px;
+
+			border-color: $normal-block-color;
+			background-color: lighten($normal-block-color, 30%);
+			background-image: linear-gradient(to bottom, lighten($normal-block-color, 30%), lighten($normal-block-color, 50%));
+
+			&.good {
+				border-color: $good-block-color;
+				background-color: lighten($good-block-color, 30%);
+				background-image: linear-gradient(to bottom, lighten($good-block-color, 30%), lighten($good-block-color, 50%));
+			}
+
+			&.alert {
+				border-color: $alert-block-color;
+				background-color: lighten($alert-block-color, 30%);
+				background-image: linear-gradient(to bottom, lighten($alert-block-color, 30%), lighten($alert-block-color, 45%));
+			}
+
+			span {
+				// can style the calendar text here.
+				$scale: 0.9;
+				font-size: 100% * $scale;
+				// re-center vertically
+				position: relative;
+				top: -1 * ( $block-height/2 - ($scale * $block-height)/2 );
+			}
+		}
+		.droc-block.droc-gap { visibility: hidden };
+
+		.droc-cal.reference {
+			opacity: 0.5;
+			.droc-block {
+				$ref-height: 0.8 * $block-height;
+				height: $ref-height;
+				top: ($line-height - $ref-height) / 2;
+				background: linear-gradient(to bottom, rgba($key-color, 0.1), rgba($key-color, 0.2));
+				border-color: $key-color;
+				border-radius: 0;
+			}
+		}
+
+		.droc-cal.dates {
+			opacity: 1;
+			.droc-block {
+				height: $line-height;
+				top: 0;
+				font-weight: bold;
+				background: rgba($key-color, 0.2);
+				border-radius: 0;
+				border-left: none;
+				&:nth-child(even) { background: rgba($key-color, 0.4); }
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

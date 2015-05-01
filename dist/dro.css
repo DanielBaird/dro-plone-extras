@@ -1,6 +1,153 @@
 /* DRO Resources */
+.dro-calendar {
+  margin: 1em 0;
+  padding: 0;
+  box-shadow: 0 0 5px #ccc;
+  overflow: hidden;
+  height: 11.08em;
+  -webkit-transition: height 0.5s;
+          transition: height 0.5s; }
+  .dro-calendar.cals-1 {
+    height: 4.36em; }
+  .dro-calendar.cals-2 {
+    height: 7.72em; }
+  .dro-calendar.cals-3 {
+    height: 11.08em; }
+  .dro-calendar.cals-4 {
+    height: 14.44em; }
+  .dro-calendar.cals-5 {
+    height: 17.8em; }
+  .dro-calendar.cals-6 {
+    height: 21.16em; }
+  .dro-calendar.cals-7 {
+    height: 24.52em; }
+  .dro-calendar.cals-8 {
+    height: 27.88em; }
+  .dro-calendar.cals-9 {
+    height: 31.24em; }
+  .dro-calendar.cals-10 {
+    height: 34.6em; }
+  .dro-calendar.cals-11 {
+    height: 37.96em; }
+  .dro-calendar.cals-12 {
+    height: 41.32em; }
+  .dro-calendar.cals-13 {
+    height: 44.68em; }
+  .dro-calendar .droc-wrap {
+    width: 100%;
+    position: relative;
+    margin: 0; }
+    .dro-calendar .droc-wrap * {
+      box-sizing: border-box; }
+    .dro-calendar .droc-wrap .droc-left, .dro-calendar .droc-wrap .droc-right {
+      position: absolute;
+      height: 3.024em;
+      width: 1.68em;
+      top: 0.168em;
+      border: 0;
+      font-size: inherit;
+      line-height: 2.688em;
+      text-align: center;
+      color: white;
+      background: #039; }
+      .dro-calendar .droc-wrap .droc-left:hover, .dro-calendar .droc-wrap .droc-right:hover {
+        background: #0044cc; }
+    .dro-calendar .droc-wrap .droc-left {
+      left: 10.168em; }
+    .dro-calendar .droc-wrap .droc-right {
+      right: 0.168em; }
+    .dro-calendar .droc-wrap .droc-titles {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 10em;
+      color: white;
+      background-image: -webkit-repeating-linear-gradient(top, rgba(0, 51, 153, 0.8), #003399 3.36em);
+      background-image: repeating-linear-gradient(to bottom, rgba(0, 51, 153, 0.8), #003399 3.36em); }
+      .dro-calendar .droc-wrap .droc-titles .droc-title {
+        display: block;
+        height: 3.36em;
+        padding-left: 0.5em;
+        line-height: 3.36em;
+        white-space: nowrap;
+        overflow: ellipsis; }
+    .dro-calendar .droc-wrap .droc-cals {
+      position: absolute;
+      left: 10em;
+      top: 0;
+      right: 0;
+      padding-bottom: 1em;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      background-image: -webkit-repeating-linear-gradient(top, rgba(0, 51, 153, 0.05), rgba(0, 51, 153, 0) 3.36em);
+      background-image: repeating-linear-gradient(to bottom, rgba(0, 51, 153, 0.05), rgba(0, 51, 153, 0) 3.36em); }
+    .dro-calendar .droc-wrap .droc-cal {
+      display: block;
+      height: 3.36em;
+      line-height: 3.36em;
+      white-space: nowrap; }
+    .dro-calendar .droc-wrap .droc-block {
+      display: inline-block;
+      position: relative;
+      top: 0.48em;
+      text-align: center;
+      height: 2.4em;
+      line-height: 2.4em;
+      overflow: hidden;
+      border-radius: 4px;
+      border: 0 solid #ccc;
+      border-width: 0 1px;
+      border-color: #aa3;
+      background-color: #e0e096;
+      background-image: -webkit-linear-gradient(top, #e0e096, #f7f7e5);
+      background-image: linear-gradient(to bottom, #e0e096, #f7f7e5); }
+      .dro-calendar .droc-wrap .droc-block.good {
+        border-color: #0b3;
+        background-color: #55ff83;
+        background-image: -webkit-linear-gradient(top, #55ff83, #bbffce);
+        background-image: linear-gradient(to bottom, #55ff83, #bbffce); }
+      .dro-calendar .droc-wrap .droc-block.alert {
+        border-color: #a33;
+        background-color: #e09696;
+        background-image: -webkit-linear-gradient(top, #e09696, #f1d1d1);
+        background-image: linear-gradient(to bottom, #e09696, #f1d1d1); }
+      .dro-calendar .droc-wrap .droc-block span {
+        font-size: 90%;
+        position: relative;
+        top: -0.12em; }
+    .dro-calendar .droc-wrap .droc-block.droc-gap {
+      visibility: hidden; }
+    .dro-calendar .droc-wrap .droc-cal.reference {
+      opacity: 0.5; }
+      .dro-calendar .droc-wrap .droc-cal.reference .droc-block {
+        height: 1.92em;
+        top: 0.72em;
+        background: -webkit-linear-gradient(top, rgba(0, 51, 153, 0.1), rgba(0, 51, 153, 0.2));
+        background: linear-gradient(to bottom, rgba(0, 51, 153, 0.1), rgba(0, 51, 153, 0.2));
+        border-color: #039;
+        border-radius: 0; }
+    .dro-calendar .droc-wrap .droc-cal.dates {
+      opacity: 1; }
+      .dro-calendar .droc-wrap .droc-cal.dates .droc-block {
+        height: 3.36em;
+        top: 0;
+        font-weight: bold;
+        background: rgba(0, 51, 153, 0.2);
+        border-radius: 0;
+        border-left: none; }
+        .dro-calendar .droc-wrap .droc-cal.dates .droc-block:nth-child(even) {
+          background: rgba(0, 51, 153, 0.4); }
+
+#content {
+  font-size: inherit; }
+
+#content-core h3 {
+  margin-top: 2em; }
+  #content-core h3:first-of-type {
+    margin-top: 0.5em; }
+
 body {
-  background-color: #f4f4f4;
+  background-color: #fcfcfc;
   background-image: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/dro-banner);
   background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/dro-banner);
   background-size: 150% 164px;
@@ -44,7 +191,7 @@ ul#portal-globalnav {
       line-height: 41px;
       height: 41px;
       font-weight: bold;
-      text-shadow: 0 0 4px #9c6;
+      text-shadow: 0 0 4px #fff;
       opacity: 0.7;
       -webkit-transition: 0.1s;
               transition: 0.1s;
@@ -58,7 +205,7 @@ ul#portal-globalnav {
       text-shadow: none;
       color: inherit; }
 
-.section-learning-and-teaching #content-core img:first-of-type, .section-experiences #content-core img:first-of-type, .section-research #content-core img:first-of-type {
+.subsection-learning-and-teaching #content-core img:first-of-type {
   float: left;
   margin: 0 2em 1em 0;
   width: 320px;
@@ -72,56 +219,344 @@ ul#portal-globalnav {
   -webkit-shape-outside: margin-box;
           shape-outside: margin-box; }
 
-.section-learning-and-teaching #content-core ol:first-of-type, .section-experiences #content-core ol:first-of-type, .section-research #content-core ol:first-of-type {
+.section-the-facility #content .documentFirstHeading {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
+  background: url(/dro/media/photo-headings/facility) no-repeat center center;
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/facility), -webkit-linear-gradient(top, #096, black);
+  background-image: url(/dro/media/photo-headings/facility), linear-gradient(to bottom, #096, black);
+  background-size: cover;
+  padding: 150px 0.5em 0.5em;
+  color: white;
+  font-size: 300%;
+  font-size: calc(20px + 2.5vw);
+  text-shadow: 0 0 3px #000, 0 0 6px #000; }
+
+.section-about-the-dro #content .documentFirstHeading {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
+  background: url(/dro/media/photo-headings/facility) no-repeat center center;
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/facility), -webkit-linear-gradient(top, #096, black);
+  background-image: url(/dro/media/photo-headings/facility), linear-gradient(to bottom, #096, black);
+  background-size: cover;
+  padding: 150px 0.5em 0.5em;
+  color: white;
+  font-size: 300%;
+  font-size: calc(20px + 2.5vw);
+  text-shadow: 0 0 3px #000, 0 0 6px #000; }
+
+.section-the-local-region #content .documentFirstHeading {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
+  background: url(/dro/media/photo-headings/region) no-repeat center center;
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/region), -webkit-linear-gradient(top, #096, black);
+  background-image: url(/dro/media/photo-headings/region), linear-gradient(to bottom, #096, black);
+  background-size: cover;
+  padding: 150px 0.5em 0.5em;
+  color: white;
+  font-size: 300%;
+  font-size: calc(20px + 2.5vw);
+  text-shadow: 0 0 3px #000, 0 0 6px #000; }
+
+.section-experiences #content .documentFirstHeading {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
+  background: url(/dro/media/photo-headings/experiences) no-repeat center center;
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/experiences), -webkit-linear-gradient(top, #096, black);
+  background-image: url(/dro/media/photo-headings/experiences), linear-gradient(to bottom, #096, black);
+  background-size: cover;
+  padding: 150px 0.5em 0.5em;
+  color: white;
+  font-size: 300%;
+  font-size: calc(20px + 2.5vw);
+  text-shadow: 0 0 3px #000, 0 0 6px #000; }
+
+.section-learning-and-teaching #content-core ol:last-of-type,
+.section-research #content-core ol:last-of-type {
   margin-left: 0;
   width: 100%;
-  text-align: center;
-  clear: both; }
-  .section-learning-and-teaching #content-core ol:first-of-type li, .section-experiences #content-core ol:first-of-type li, .section-research #content-core ol:first-of-type li {
+  clear: both;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: justify; }
+  .section-learning-and-teaching #content-core ol:last-of-type:after,
+  .section-research #content-core ol:last-of-type:after {
+    content: '';
+    display: inline-block;
+    height: 0.1px;
+    width: 100%;
+    opacity: 0; }
+  .section-learning-and-teaching #content-core ol:last-of-type li,
+  .section-research #content-core ol:last-of-type li {
+    width: 12em;
+    min-height: 11em;
+    font-size: 80%;
+    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), -webkit-linear-gradient(top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
+    background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), linear-gradient(to bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
+    font-size: 90%;
+    width: 14em;
+    min-height: 14em;
+    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 1em, rgba(153, 204, 102, 0) 2em);
+    background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 1em, rgba(153, 204, 102, 0) 2em);
+    background-color: #fff;
     display: inline-block;
     position: relative;
     vertical-align: top;
     text-align: left;
-    width: 12em;
-    min-height: 12em;
-    padding: 2em;
-    margin: 2em 1em;
-    border: 1px solid rgba(153, 204, 102, 0.5);
-    background: -webkit-linear-gradient(285deg, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0) 5em);
-    background: linear-gradient(165deg, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0) 5em);
+    padding: 1em;
+    margin: 1em 0.66667em;
     border-radius: 2px; }
-    .section-learning-and-teaching #content-core ol:first-of-type li:before, .section-experiences #content-core ol:first-of-type li:before, .section-research #content-core ol:first-of-type li:before {
-      content: 'next...';
-      font-size: 150%;
-      color: white;
-      text-shadow: 0 0 1px #9c6, 0 0 2px #9c6;
+    .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(1):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li,
+    .section-research #content-core ol:last-of-type li:nth-last-child(1):first-child,
+    .section-research #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li {
+      width: 24em; }
+    .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(2):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li,
+    .section-research #content-core ol:last-of-type li:nth-last-child(2):first-child,
+    .section-research #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li {
+      width: 24em; }
+    .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(3):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li,
+    .section-research #content-core ol:last-of-type li:nth-last-child(3):first-child,
+    .section-research #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li {
+      width: 16em; }
+    .section-learning-and-teaching #content-core ol:last-of-type li a:last-of-type,
+    .section-research #content-core ol:last-of-type li a:last-of-type {
       position: absolute;
-      top: -0.25em;
-      left: -0.25em;
-      -webkit-transform: rotate(-15deg);
-          -ms-transform: rotate(-15deg);
-              transform: rotate(-15deg); }
-    .section-learning-and-teaching #content-core ol:first-of-type li a:last-of-type, .section-experiences #content-core ol:first-of-type li a:last-of-type, .section-research #content-core ol:first-of-type li a:last-of-type {
+      bottom: 1em;
+      right: 1.5em;
       font-size: 90%;
-      float: right;
       font-style: italic;
-      white-space: nowrap;
-      margin: 0.5em 0 0 0.5em; }
-      .section-learning-and-teaching #content-core ol:first-of-type li a:last-of-type:after, .section-experiences #content-core ol:first-of-type li a:last-of-type:after, .section-research #content-core ol:first-of-type li a:last-of-type:after {
+      white-space: nowrap; }
+      .section-learning-and-teaching #content-core ol:last-of-type li a:last-of-type:after,
+      .section-research #content-core ol:last-of-type li a:last-of-type:after {
         content: ' \00bb'; }
-    .section-learning-and-teaching #content-core ol:first-of-type li a:first-of-type, .section-experiences #content-core ol:first-of-type li a:first-of-type, .section-research #content-core ol:first-of-type li a:first-of-type {
+    .section-learning-and-teaching #content-core ol:last-of-type li a:first-of-type,
+    .section-research #content-core ol:last-of-type li a:first-of-type {
+      position: static;
+      box-sizing: border-box;
+      color: #096;
       text-align: center;
-      font-weight: bold;
-      font-size: 120%;
       display: block;
-      height: 3em;
-      margin: 0 auto 0.25em;
-      padding: 0 0 0.25em;
+      height: 3.5em;
+      margin: 0 auto 1em;
+      padding: 1em 0 0;
       float: none;
       font-style: normal;
-      white-space: normal; }
-      .section-learning-and-teaching #content-core ol:first-of-type li a:first-of-type:after, .section-experiences #content-core ol:first-of-type li a:first-of-type:after, .section-research #content-core ol:first-of-type li a:first-of-type:after {
+      white-space: normal;
+      font-size: 120%;
+      margin: -0.41667em;
+      margin-bottom: 0.5em;
+      color: rgba(255, 255, 255, 0.9);
+      background: #096;
+      background: -webkit-linear-gradient(top, rgba(0, 153, 102, 0.8), #009966);
+      background: linear-gradient(to bottom, rgba(0, 153, 102, 0.8), #009966);
+      border-radius: 6px;
+      padding-left: 0.5em;
+      padding-right: 0.5em; }
+      .section-learning-and-teaching #content-core ol:last-of-type li a:first-of-type:after,
+      .section-research #content-core ol:last-of-type li a:first-of-type:after {
         display: none; }
+      .section-learning-and-teaching #content-core ol:last-of-type li a:first-of-type:hover,
+      .section-research #content-core ol:last-of-type li a:first-of-type:hover {
+        color: white !important; }
+
+.section-home #content-core ol:last-of-type {
+  margin-left: 0;
+  margin: 0 -2%;
+  padding: 0 2%;
+  background: #fcfcfc;
+  width: 100%;
+  clear: both;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: justify;
+  text-align: right; }
+  .section-home #content-core ol:last-of-type:after {
+    content: '';
+    display: inline-block;
+    height: 0.1px;
+    width: 100%;
+    opacity: 0; }
+  .section-home #content-core ol:last-of-type li {
+    width: 12em;
+    min-height: 11em;
+    font-size: 80%;
+    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), -webkit-linear-gradient(top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
+    background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), linear-gradient(to bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: left;
+    padding: 1em;
+    margin: 0.5em 0.33333em;
+    border-radius: 2px; }
+    .section-home #content-core ol:last-of-type li:nth-last-child(1):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li {
+      width: 24em; }
+    .section-home #content-core ol:last-of-type li:nth-last-child(2):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li {
+      width: 24em; }
+    .section-home #content-core ol:last-of-type li:nth-last-child(3):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li {
+      width: 16em; }
+    .section-home #content-core ol:last-of-type li a:last-of-type {
+      position: absolute;
+      bottom: 1em;
+      right: 1.5em;
+      font-size: 90%;
+      font-style: italic;
+      white-space: nowrap; }
+      .section-home #content-core ol:last-of-type li a:last-of-type:after {
+        content: ' \00bb'; }
+    .section-home #content-core ol:last-of-type li a:first-of-type {
+      position: static;
+      box-sizing: border-box;
+      color: #096;
+      text-align: center;
+      display: block;
+      height: 3.5em;
+      margin: 0 auto 1em;
+      padding: 1em 0 0;
+      float: none;
+      font-style: normal;
+      white-space: normal;
+      font-weight: bold;
+      font-size: 110%;
+      background: -webkit-linear-gradient(top, rgba(153, 204, 102, 0), rgba(153, 204, 102, 0.1));
+      background: linear-gradient(to bottom, rgba(153, 204, 102, 0), rgba(153, 204, 102, 0.1));
+      background-repeat: no-repeat;
+      background-position-y: 3.25em;
+      -webkit-transition: 0.3s;
+              transition: 0.3s; }
+      .section-home #content-core ol:last-of-type li a:first-of-type:after {
+        display: none; }
+      .section-home #content-core ol:last-of-type li a:first-of-type:hover {
+        background-position-y: 0;
+        text-decoration: underline; }
+
+.section-the-facility #content-core ol:last-of-type,
+.section-the-local-region #content-core ol:last-of-type,
+.section-experiences #content-core ol:last-of-type,
+.section-contact #content-core ol:last-of-type,
+.section-about-the-dro #content-core ol:last-of-type {
+  margin-left: 0;
+  width: 100%;
+  clear: both;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: justify; }
+  .section-the-facility #content-core ol:last-of-type:after,
+  .section-the-local-region #content-core ol:last-of-type:after,
+  .section-experiences #content-core ol:last-of-type:after,
+  .section-contact #content-core ol:last-of-type:after,
+  .section-about-the-dro #content-core ol:last-of-type:after {
+    content: '';
+    display: inline-block;
+    height: 0.1px;
+    width: 100%;
+    opacity: 0; }
+  .section-the-facility #content-core ol:last-of-type li,
+  .section-the-local-region #content-core ol:last-of-type li,
+  .section-experiences #content-core ol:last-of-type li,
+  .section-contact #content-core ol:last-of-type li,
+  .section-about-the-dro #content-core ol:last-of-type li {
+    width: 12em;
+    min-height: 11em;
+    font-size: 80%;
+    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), -webkit-linear-gradient(top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
+    background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), linear-gradient(to bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: left;
+    padding: 1em;
+    margin: 0.5em 0.33333em;
+    border-radius: 2px; }
+    .section-the-facility #content-core ol:last-of-type li:nth-last-child(1):first-child, .section-the-facility #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li,
+    .section-the-local-region #content-core ol:last-of-type li:nth-last-child(1):first-child,
+    .section-the-local-region #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li,
+    .section-experiences #content-core ol:last-of-type li:nth-last-child(1):first-child,
+    .section-experiences #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li,
+    .section-contact #content-core ol:last-of-type li:nth-last-child(1):first-child,
+    .section-contact #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li,
+    .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(1):first-child,
+    .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li {
+      width: 24em; }
+    .section-the-facility #content-core ol:last-of-type li:nth-last-child(2):first-child, .section-the-facility #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li,
+    .section-the-local-region #content-core ol:last-of-type li:nth-last-child(2):first-child,
+    .section-the-local-region #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li,
+    .section-experiences #content-core ol:last-of-type li:nth-last-child(2):first-child,
+    .section-experiences #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li,
+    .section-contact #content-core ol:last-of-type li:nth-last-child(2):first-child,
+    .section-contact #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li,
+    .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(2):first-child,
+    .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li {
+      width: 24em; }
+    .section-the-facility #content-core ol:last-of-type li:nth-last-child(3):first-child, .section-the-facility #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li,
+    .section-the-local-region #content-core ol:last-of-type li:nth-last-child(3):first-child,
+    .section-the-local-region #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li,
+    .section-experiences #content-core ol:last-of-type li:nth-last-child(3):first-child,
+    .section-experiences #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li,
+    .section-contact #content-core ol:last-of-type li:nth-last-child(3):first-child,
+    .section-contact #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li,
+    .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(3):first-child,
+    .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li {
+      width: 16em; }
+    .section-the-facility #content-core ol:last-of-type li a:last-of-type,
+    .section-the-local-region #content-core ol:last-of-type li a:last-of-type,
+    .section-experiences #content-core ol:last-of-type li a:last-of-type,
+    .section-contact #content-core ol:last-of-type li a:last-of-type,
+    .section-about-the-dro #content-core ol:last-of-type li a:last-of-type {
+      position: absolute;
+      bottom: 1em;
+      right: 1.5em;
+      font-size: 90%;
+      font-style: italic;
+      white-space: nowrap; }
+      .section-the-facility #content-core ol:last-of-type li a:last-of-type:after,
+      .section-the-local-region #content-core ol:last-of-type li a:last-of-type:after,
+      .section-experiences #content-core ol:last-of-type li a:last-of-type:after,
+      .section-contact #content-core ol:last-of-type li a:last-of-type:after,
+      .section-about-the-dro #content-core ol:last-of-type li a:last-of-type:after {
+        content: ' \00bb'; }
+    .section-the-facility #content-core ol:last-of-type li a:first-of-type,
+    .section-the-local-region #content-core ol:last-of-type li a:first-of-type,
+    .section-experiences #content-core ol:last-of-type li a:first-of-type,
+    .section-contact #content-core ol:last-of-type li a:first-of-type,
+    .section-about-the-dro #content-core ol:last-of-type li a:first-of-type {
+      position: static;
+      box-sizing: border-box;
+      color: #096;
+      text-align: center;
+      display: block;
+      height: 3.5em;
+      margin: 0 auto 1em;
+      padding: 1em 0 0;
+      float: none;
+      font-style: normal;
+      white-space: normal;
+      font-weight: bold;
+      font-size: 110%;
+      background: -webkit-linear-gradient(top, rgba(153, 204, 102, 0), rgba(153, 204, 102, 0.1));
+      background: linear-gradient(to bottom, rgba(153, 204, 102, 0), rgba(153, 204, 102, 0.1));
+      background-repeat: no-repeat;
+      background-position-y: 3.25em;
+      -webkit-transition: 0.3s;
+              transition: 0.3s; }
+      .section-the-facility #content-core ol:last-of-type li a:first-of-type:after,
+      .section-the-local-region #content-core ol:last-of-type li a:first-of-type:after,
+      .section-experiences #content-core ol:last-of-type li a:first-of-type:after,
+      .section-contact #content-core ol:last-of-type li a:first-of-type:after,
+      .section-about-the-dro #content-core ol:last-of-type li a:first-of-type:after {
+        display: none; }
+      .section-the-facility #content-core ol:last-of-type li a:first-of-type:hover,
+      .section-the-local-region #content-core ol:last-of-type li a:first-of-type:hover,
+      .section-experiences #content-core ol:last-of-type li a:first-of-type:hover,
+      .section-contact #content-core ol:last-of-type li a:first-of-type:hover,
+      .section-about-the-dro #content-core ol:last-of-type li a:first-of-type:hover {
+        background-position-y: 0;
+        text-decoration: underline; }
+
+.section-home.template-atct_edit #content .fancywrapper {
+  height: auto; }
 
 .section-home:not(.template-atct_edit) #viewlet-below-content-title {
   display: none; }
@@ -129,14 +564,18 @@ ul#portal-globalnav {
   display: none; }
 .section-home:not(.template-atct_edit) #portal-columns {
   margin-top: 0; }
+.section-home:not(.template-atct_edit) #portal-footer-wrapper {
+  margin-top: 0;
+  border-top-color: #fcfcfc; }
 .section-home:not(.template-atct_edit) #content-core {
   margin-top: 0; }
 .section-home:not(.template-atct_edit) #content {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 0; }
 .section-home:not(.template-atct_edit) #content .documentFirstHeading {
   margin: 0 -2%;
   padding: 0 2%;
-  background: #f4f4f4;
+  background: #fcfcfc;
   padding: 1em 0;
   font-weight: 100;
   text-align: center;
@@ -145,7 +584,7 @@ ul#portal-globalnav {
 .section-home:not(.template-atct_edit) #content div.fancywrapper {
   margin: 0 -2%;
   padding: 0 2%;
-  background: #f4f4f4;
+  background: #fcfcfc;
   text-align: center; }
 .section-home:not(.template-atct_edit) #content div.video {
   display: inline-block;
@@ -171,7 +610,7 @@ ul#portal-globalnav {
     box-sizing: border-box;
     background-color: #fff;
     line-height: 1.4;
-    box-shadow: 0 0 3px #f4f4f4;
+    box-shadow: 0 0 3px #fcfcfc;
     position: relative;
     min-height: 117px;
     border-bottom-left-radius: 57.5px;
@@ -190,28 +629,81 @@ ul#portal-globalnav {
       border-top-left-radius: 0;
       background-position: center;
       background-size: cover; }
-    .section-home:not(.template-atct_edit) #content ul.features li a:first-of-type {
-      position: relative;
-      display: block;
-      padding: 7.5px 0;
-      font-size: 140%;
-      color: #096;
-      text-shadow: 0 0 4px #fff, 0 0 7px #fff, 0 0 10px #fff; }
     .section-home:not(.template-atct_edit) #content ul.features li.experience:before {
       background-image: url(/dro/media/experience-banner); }
     .section-home:not(.template-atct_edit) #content ul.features li.landt:before {
       background-image: url(/dro/media/landt-banner); }
     .section-home:not(.template-atct_edit) #content ul.features li.research:before {
       background-image: url(/dro/media/research-banner); }
+    .section-home:not(.template-atct_edit) #content ul.features li a:first-of-type {
+      position: relative;
+      display: block;
+      padding: 7.5px 0;
+      font-size: 110%;
+      color: #096;
+      text-shadow: 0 0 4px #fff, 0 0 7px #fff, 0 0 10px #fff; }
+    .section-home:not(.template-atct_edit) #content ul.features li p {
+      font-size: 90%;
+      margin: 0; }
+
+.section-the-facility .image-left {
+  clear: left; }
+.section-the-facility .image-right {
+  clear: right; }
+
+.subsection-visual-facilities-tour #content-core ol {
+  clear: both;
+  position: relative;
+  list-style-type: none;
+  margin: 1em 0;
+  padding: 0; }
+.subsection-visual-facilities-tour #content-core ol li {
+  padding: 0;
+  margin: 0; }
+  .subsection-visual-facilities-tour #content-core ol li img {
+    background: #666;
+    background-image: -webkit-linear-gradient(top, #999, #333);
+    background-image: linear-gradient(to bottom, #999, #333);
+    display: block; }
+.subsection-visual-facilities-tour #content-core ol li:last-of-type {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  font-size: 90%;
+  padding: 0.3em 2em 0.3em 1em;
+  background: black;
+  color: white;
+  opacity: 0.9;
+  -webkit-transition: 0.2s;
+          transition: 0.2s; }
+  .subsection-visual-facilities-tour #content-core ol li:last-of-type:after {
+    position: absolute;
+    content: '';
+    width: 2em;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: black;
+    -webkit-transform: skewX(30deg);
+        -ms-transform: skewX(30deg);
+            transform: skewX(30deg);
+    -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+            transform-origin: top; }
+.subsection-visual-facilities-tour #content-core ol li:last-of-type:hover {
+  opacity: 0; }
 
 p.todo, td.todo, th.todo, h1.todo, h2.todo, h3.todo, h4.todo {
   background: #ffb; }
 
 p.todo {
   padding: 0.66em 1em;
-  opacity: 0.25;
-  -webkit-transition: opacity 0.5s;
-          transition: opacity 0.5s; }
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s;
+          transition: opacity 0.2s; }
 
 p.todo:hover {
   opacity: 1; }
@@ -267,4 +759,5 @@ p.todo.todo-pic.todo-pic-8 {
 
 p.todo.todo-pic.todo-pic-9 {
   background-image: url(http://placecorgi.com/990/390); }
+
 /*# sourceMappingURL=dro.css.map */

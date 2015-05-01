@@ -43,4 +43,9 @@ jQuery(function ($) {
 		}
 	});
 
+	// load calendar
+	if ($('.dro-calendar').length > 0) {
+		buildCalendar('.dro-calendar');
+	}
+
 });
