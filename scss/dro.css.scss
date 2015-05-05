@@ -13,7 +13,7 @@
 $title-color: #096; // colour of title text.  Matches theme colour
 $bg-highlight: #9c6; // used in tab bgs, etc.  Matches theme color
 
-$page-bg: #fcfcfc; // page background colour (seems too dark to me)
+$page-bg: #f8f8f8; // page background colour
 
 // banners & branding images for site sections
 $banner-image: /dro/media/dro-banner;
@@ -124,14 +124,21 @@ ul#portal-globalnav {
 		padding: 0;
 		a {
 			margin: 0;
-			padding: 1px 2em 0;
+			padding: 1px 1.5em 0;
 			line-height: $nav-tab-height;
 			height: $nav-tab-height;
-			font-weight: bold;
-			text-shadow: 0 0 4px #fff;
+			text-shadow: 0 0 2px #fff, 0 0 4px #fff;
 			opacity: 0.7;
 			transition: 0.1s;
 			color: inherit;
+		}
+		// special ones get bolded
+		&#portaltab-experiences a,
+		&#portaltab-learning-and-teaching a,
+		&#portaltab-research a {
+			// they're already set to 80%, so 85% is making them bigger
+			font-size: 85%;
+			font-weight: bold;
 		}
 		&.selected a {
 			opacity: 1;
@@ -169,11 +176,12 @@ ul#portal-globalnav {
 	shape-outside: margin-box;
 }
 
-.subsection-learning-and-teaching {
-	#content-core img:first-of-type {
-		@include big-teardrop-image;
-	}
-}
+// hmm let's not use the teardrop?
+// .subsection-learning-and-teaching {
+// 	#content-core img:first-of-type {
+// 		@include big-teardrop-image;
+// 	}
+// }
 
 ////////////////////////////////// title photo banner for major pages
 
@@ -199,9 +207,11 @@ ul#portal-globalnav {
 
 // pages that use the photo banner..
 .section-the-facility     { @include title-photo-bg(/dro/media/photo-headings/facility); }
-.section-about-the-dro    { @include title-photo-bg(/dro/media/photo-headings/facility); }
+.section-about-the-dro    { @include title-photo-bg(/dro/media/photo-headings/about); }
 .section-the-local-region { @include title-photo-bg(/dro/media/photo-headings/region); }
 .section-experiences      { @include title-photo-bg(/dro/media/photo-headings/experiences); }
+.section-research         { @include title-photo-bg(/dro/media/photo-headings/research); }
+.section-learning-and-teaching { @include title-photo-bg(/dro/media/photo-headings/learning-and-teaching); }
 
 ////////////////////////////////////////// link points on major pages
 
@@ -226,15 +236,17 @@ ul#portal-globalnav {
 	$out-gap: 0.5em;
 
 	width: 12em;
+	min-width: 12em;
 	min-height: 11em;
 	font-size: 80%;
 	background-image: linear-gradient(to top,    rgba($color, 0.2), rgba($color, 0.05) 0.5 * $in-gap, rgba($color, 0) 1.5 * $in-gap),
 	                  linear-gradient(to bottom, rgba($color, 0.2), rgba($color, 0.05) 0.5 * $in-gap, rgba($color, 0) 1.5 * $in-gap);
 
 	// this only works if this mixin is used inside an li. sorry.
-	&:nth-last-child(1):first-child, &:nth-last-child(1):first-child ~ li { width: 24em; }
-	&:nth-last-child(2):first-child, &:nth-last-child(2):first-child ~ li { width: 24em; }
-	&:nth-last-child(3):first-child, &:nth-last-child(3):first-child ~ li { width: 16em; }
+	&:nth-last-child(1):first-child, &:nth-last-child(1):first-child ~ li { width: 60%; }
+	&:nth-last-child(2):first-child, &:nth-last-child(2):first-child ~ li { width: 40%; }
+	&:nth-last-child(3):first-child, &:nth-last-child(3):first-child ~ li { width: 25%; }
+	&:nth-last-child(4):first-child, &:nth-last-child(4):first-child ~ li { width: 18%; }
 
 	@if ($size == 'large') {
 		font-size: 90%;
@@ -442,6 +454,10 @@ ul#portal-globalnav {
 				line-height: 1.4;
 
 				box-shadow: 0 0 3px $page-bg;
+
+				$color: #9c6;
+				background-image: linear-gradient(to top,    rgba($color, 0.2), rgba($color, 0.05) 0.5 * $padding, rgba($color, 0) 1.5 * $padding),
+	        			          linear-gradient(to bottom, rgba($color, 0.2), rgba($color, 0.05) 0.5 * $padding, rgba($color, 0) 1.5 * $padding);
 
 				// rounded corners
 				position: relative;

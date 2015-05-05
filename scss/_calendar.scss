@@ -4,12 +4,14 @@
 //
 .dro-calendar {
 
-	$titles-width: 10em;
+	clear: both;
+
+	$titles-width: 8em;
 	$block-height: 2.4em;
 	$line-height: 1.4 * $block-height;
 	$extra-scrollbar-pad: 1em;
 
-	$key-color: #039;
+	$key-color: #26a;
 	$good-block-color: #0b3;
 	$normal-block-color: #aa3;
 	$alert-block-color: #a33;
@@ -19,8 +21,8 @@
 	box-shadow: 0 0 5px #ccc;
 	overflow: hidden;
 
-	// start at three-calendars-high
-	height: 3 * $line-height + $extra-scrollbar-pad;
+	// start small (will grow to fit all calendars)
+	height: 1 * $line-height + $extra-scrollbar-pad;
 	transition: height 0.5s;
 
 	&.cals-1  { height:  1 * $line-height + $extra-scrollbar-pad; };

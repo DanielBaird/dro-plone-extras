@@ -24,7 +24,7 @@ function buildCalendar(calElement, data) {
 			start: 'January 2015',
 			monthsLong: 18,
 			calendars: [
-				{ 	name: 'Qld School Terms', type: 'reference', blocks: [
+				{ 	name: 'Qld Schools', type: 'reference', blocks: [
 					{ message: 'Term 1, 2015',  start: '27 Jan 2015',  end: '02 Apr 2015' },
 					{ message: 'Term 2, 2015',  start: '20 Apr 2015',  end: '26 Jun 2015' },
 					{ message: 'Term 3, 2015',  start: '13 Jul 2015',  end: '18 Sep 2015' },
@@ -33,7 +33,7 @@ function buildCalendar(calElement, data) {
 					{ message: 'Term 1, 2016',  start: '25 Jan 2016',  end: '24 Mar 2016' },
 					{ message: 'Term 2, 2016',  start: '11 Apr 2016',  end: '24 Jun 2016' }
 				]},
-				{ 	name: 'NSW School Terms', type: 'reference', blocks: [
+				{ 	name: 'NSW Schools', type: 'reference', blocks: [
 					{ message: 'Term 1, 2015',  start: '27 Jan 2015',  end: '02 Apr 2015' },
 					{ message: 'Term 2, 2015',  start: '20 Apr 2015',  end: '26 Jun 2015' },
 					{ message: 'Term 3, 2015',  start: '13 Jul 2015',  end: '18 Sep 2015' },
@@ -47,7 +47,7 @@ function buildCalendar(calElement, data) {
 					{ message: 'available',  start: '19 Feb 2015',  end: '12 Apr 2015',  type: 'good' },
 					{ message: 'call',       start: '13 Apr 2015',  end: '28 Apr 2015',  longMessage: 'call, some places available' },
 				]},
-				{ 	name: 'Researcher Rooms', blocks: [
+				{ 	name: 'Rooms', blocks: [
 					{ message: 'available',  start: '07 Jan 2015',  end: '04 Feb 2015',  type: 'good' },
 					{ message: 'available',  start: '06 Feb 2015',  end: '04 Apr 2015',  type: 'good' },
 					{ message: 'call',       start: '09 Apr 2015',  end: '12 Apr 2015',  longMessage: 'call, some places available' },

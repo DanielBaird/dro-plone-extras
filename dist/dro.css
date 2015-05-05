@@ -1,12 +1,12 @@
 /* DRO Resources */
 .dro-calendar {
+  clear: both;
   margin: 1em 0;
   padding: 0;
   box-shadow: 0 0 5px #ccc;
   overflow: hidden;
-  height: 11.08em;
-  -webkit-transition: height 0.5s;
-          transition: height 0.5s; }
+  height: 4.36em;
+  transition: height 0.5s; }
   .dro-calendar.cals-1 {
     height: 4.36em; }
   .dro-calendar.cals-2 {
@@ -49,21 +49,20 @@
       line-height: 2.688em;
       text-align: center;
       color: white;
-      background: #039; }
+      background: #26a; }
       .dro-calendar .droc-wrap .droc-left:hover, .dro-calendar .droc-wrap .droc-right:hover {
-        background: #0044cc; }
+        background: #2a7fd5; }
     .dro-calendar .droc-wrap .droc-left {
-      left: 10.168em; }
+      left: 8.168em; }
     .dro-calendar .droc-wrap .droc-right {
       right: 0.168em; }
     .dro-calendar .droc-wrap .droc-titles {
       position: absolute;
       left: 0;
       top: 0;
-      width: 10em;
+      width: 8em;
       color: white;
-      background-image: -webkit-repeating-linear-gradient(top, rgba(0, 51, 153, 0.8), #003399 3.36em);
-      background-image: repeating-linear-gradient(to bottom, rgba(0, 51, 153, 0.8), #003399 3.36em); }
+      background-image: repeating-linear-gradient(to bottom, rgba(34, 102, 170, 0.8), #2266aa 3.36em); }
       .dro-calendar .droc-wrap .droc-titles .droc-title {
         display: block;
         height: 3.36em;
@@ -73,14 +72,13 @@
         overflow: ellipsis; }
     .dro-calendar .droc-wrap .droc-cals {
       position: absolute;
-      left: 10em;
+      left: 8em;
       top: 0;
       right: 0;
       padding-bottom: 1em;
       overflow-x: scroll;
       overflow-y: hidden;
-      background-image: -webkit-repeating-linear-gradient(top, rgba(0, 51, 153, 0.05), rgba(0, 51, 153, 0) 3.36em);
-      background-image: repeating-linear-gradient(to bottom, rgba(0, 51, 153, 0.05), rgba(0, 51, 153, 0) 3.36em); }
+      background-image: repeating-linear-gradient(to bottom, rgba(34, 102, 170, 0.05), rgba(34, 102, 170, 0) 3.36em); }
     .dro-calendar .droc-wrap .droc-cal {
       display: block;
       height: 3.36em;
@@ -99,17 +97,14 @@
       border-width: 0 1px;
       border-color: #aa3;
       background-color: #e0e096;
-      background-image: -webkit-linear-gradient(top, #e0e096, #f7f7e5);
       background-image: linear-gradient(to bottom, #e0e096, #f7f7e5); }
       .dro-calendar .droc-wrap .droc-block.good {
         border-color: #0b3;
         background-color: #55ff83;
-        background-image: -webkit-linear-gradient(top, #55ff83, #bbffce);
         background-image: linear-gradient(to bottom, #55ff83, #bbffce); }
       .dro-calendar .droc-wrap .droc-block.alert {
         border-color: #a33;
         background-color: #e09696;
-        background-image: -webkit-linear-gradient(top, #e09696, #f1d1d1);
         background-image: linear-gradient(to bottom, #e09696, #f1d1d1); }
       .dro-calendar .droc-wrap .droc-block span {
         font-size: 90%;
@@ -122,9 +117,8 @@
       .dro-calendar .droc-wrap .droc-cal.reference .droc-block {
         height: 1.92em;
         top: 0.72em;
-        background: -webkit-linear-gradient(top, rgba(0, 51, 153, 0.1), rgba(0, 51, 153, 0.2));
-        background: linear-gradient(to bottom, rgba(0, 51, 153, 0.1), rgba(0, 51, 153, 0.2));
-        border-color: #039;
+        background: linear-gradient(to bottom, rgba(34, 102, 170, 0.1), rgba(34, 102, 170, 0.2));
+        border-color: #26a;
         border-radius: 0; }
     .dro-calendar .droc-wrap .droc-cal.dates {
       opacity: 1; }
@@ -132,11 +126,11 @@
         height: 3.36em;
         top: 0;
         font-weight: bold;
-        background: rgba(0, 51, 153, 0.2);
+        background: rgba(34, 102, 170, 0.2);
         border-radius: 0;
         border-left: none; }
         .dro-calendar .droc-wrap .droc-cal.dates .droc-block:nth-child(even) {
-          background: rgba(0, 51, 153, 0.4); }
+          background: rgba(34, 102, 170, 0.4); }
 
 #content {
   font-size: inherit; }
@@ -147,8 +141,7 @@
     margin-top: 0.5em; }
 
 body {
-  background-color: #fcfcfc;
-  background-image: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/dro-banner);
+  background-color: #f8f8f8;
   background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/dro-banner);
   background-size: 150% 164px;
   background-repeat: no-repeat;
@@ -157,7 +150,6 @@ body {
 #visual-portal-wrapper {
   border: none;
   background: #fff;
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 165px, white 165px);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 165px, white 165px); }
 
 #portal-breadcrumbs {
@@ -173,9 +165,7 @@ body {
   background-size: cover; }
 
 ul#portal-globalnav {
-  background: -webkit-linear-gradient(top, rgba(153, 204, 102, 0.1), rgba(153, 204, 102, 0.9));
   background: linear-gradient(to bottom, rgba(153, 204, 102, 0.1), rgba(153, 204, 102, 0.9));
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
   font-size: inherit;
   color: inherit;
@@ -187,15 +177,16 @@ ul#portal-globalnav {
     padding: 0; }
     ul#portal-globalnav li a {
       margin: 0;
-      padding: 1px 2em 0;
+      padding: 1px 1.5em 0;
       line-height: 41px;
       height: 41px;
-      font-weight: bold;
-      text-shadow: 0 0 4px #fff;
+      text-shadow: 0 0 2px #fff, 0 0 4px #fff;
       opacity: 0.7;
-      -webkit-transition: 0.1s;
-              transition: 0.1s;
+      transition: 0.1s;
       color: inherit; }
+    ul#portal-globalnav li#portaltab-experiences a, ul#portal-globalnav li#portaltab-learning-and-teaching a, ul#portal-globalnav li#portaltab-research a {
+      font-size: 85%;
+      font-weight: bold; }
     ul#portal-globalnav li.selected a {
       opacity: 1;
       text-shadow: none;
@@ -205,25 +196,10 @@ ul#portal-globalnav {
       text-shadow: none;
       color: inherit; }
 
-.subsection-learning-and-teaching #content-core img:first-of-type {
-  float: left;
-  margin: 0 2em 1em 0;
-  width: 320px;
-  height: 320px;
-  border: none;
-  border-top-right-radius: 160px;
-  border-bottom-right-radius: 160px;
-  border-bottom-left-radius: 160px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-shape-outside: margin-box;
-          shape-outside: margin-box; }
-
 .section-the-facility #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/facility) no-repeat center center;
   background-color: #096;
-  background-image: url(/dro/media/photo-headings/facility), -webkit-linear-gradient(top, #096, black);
   background-image: url(/dro/media/photo-headings/facility), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
@@ -234,10 +210,9 @@ ul#portal-globalnav {
 
 .section-about-the-dro #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
-  background: url(/dro/media/photo-headings/facility) no-repeat center center;
+  background: url(/dro/media/photo-headings/about) no-repeat center center;
   background-color: #096;
-  background-image: url(/dro/media/photo-headings/facility), -webkit-linear-gradient(top, #096, black);
-  background-image: url(/dro/media/photo-headings/facility), linear-gradient(to bottom, #096, black);
+  background-image: url(/dro/media/photo-headings/about), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -249,7 +224,6 @@ ul#portal-globalnav {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/region) no-repeat center center;
   background-color: #096;
-  background-image: url(/dro/media/photo-headings/region), -webkit-linear-gradient(top, #096, black);
   background-image: url(/dro/media/photo-headings/region), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
@@ -262,8 +236,31 @@ ul#portal-globalnav {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/experiences) no-repeat center center;
   background-color: #096;
-  background-image: url(/dro/media/photo-headings/experiences), -webkit-linear-gradient(top, #096, black);
   background-image: url(/dro/media/photo-headings/experiences), linear-gradient(to bottom, #096, black);
+  background-size: cover;
+  padding: 150px 0.5em 0.5em;
+  color: white;
+  font-size: 300%;
+  font-size: calc(20px + 2.5vw);
+  text-shadow: 0 0 3px #000, 0 0 6px #000; }
+
+.section-research #content .documentFirstHeading {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
+  background: url(/dro/media/photo-headings/research) no-repeat center center;
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/research), linear-gradient(to bottom, #096, black);
+  background-size: cover;
+  padding: 150px 0.5em 0.5em;
+  color: white;
+  font-size: 300%;
+  font-size: calc(20px + 2.5vw);
+  text-shadow: 0 0 3px #000, 0 0 6px #000; }
+
+.section-learning-and-teaching #content .documentFirstHeading {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
+  background: url(/dro/media/photo-headings/learning-and-teaching) no-repeat center center;
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/learning-and-teaching), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -289,14 +286,13 @@ ul#portal-globalnav {
   .section-learning-and-teaching #content-core ol:last-of-type li,
   .section-research #content-core ol:last-of-type li {
     width: 12em;
+    min-width: 12em;
     min-height: 11em;
     font-size: 80%;
-    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), -webkit-linear-gradient(top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
     background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), linear-gradient(to bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
     font-size: 90%;
     width: 14em;
     min-height: 14em;
-    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 1em, rgba(153, 204, 102, 0) 2em);
     background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 1em, rgba(153, 204, 102, 0) 2em);
     background-color: #fff;
     display: inline-block;
@@ -309,15 +305,19 @@ ul#portal-globalnav {
     .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(1):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li,
     .section-research #content-core ol:last-of-type li:nth-last-child(1):first-child,
     .section-research #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li {
-      width: 24em; }
+      width: 60%; }
     .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(2):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li,
     .section-research #content-core ol:last-of-type li:nth-last-child(2):first-child,
     .section-research #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li {
-      width: 24em; }
+      width: 40%; }
     .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(3):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li,
     .section-research #content-core ol:last-of-type li:nth-last-child(3):first-child,
     .section-research #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li {
-      width: 16em; }
+      width: 25%; }
+    .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(4):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li,
+    .section-research #content-core ol:last-of-type li:nth-last-child(4):first-child,
+    .section-research #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li {
+      width: 18%; }
     .section-learning-and-teaching #content-core ol:last-of-type li a:last-of-type,
     .section-research #content-core ol:last-of-type li a:last-of-type {
       position: absolute;
@@ -347,7 +347,6 @@ ul#portal-globalnav {
       margin-bottom: 0.5em;
       color: rgba(255, 255, 255, 0.9);
       background: #096;
-      background: -webkit-linear-gradient(top, rgba(0, 153, 102, 0.8), #009966);
       background: linear-gradient(to bottom, rgba(0, 153, 102, 0.8), #009966);
       border-radius: 6px;
       padding-left: 0.5em;
@@ -363,7 +362,7 @@ ul#portal-globalnav {
   margin-left: 0;
   margin: 0 -2%;
   padding: 0 2%;
-  background: #fcfcfc;
+  background: #f8f8f8;
   width: 100%;
   clear: both;
   padding-top: 1em;
@@ -378,9 +377,9 @@ ul#portal-globalnav {
     opacity: 0; }
   .section-home #content-core ol:last-of-type li {
     width: 12em;
+    min-width: 12em;
     min-height: 11em;
     font-size: 80%;
-    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), -webkit-linear-gradient(top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
     background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), linear-gradient(to bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
     background-color: #fff;
     display: inline-block;
@@ -391,11 +390,13 @@ ul#portal-globalnav {
     margin: 0.5em 0.33333em;
     border-radius: 2px; }
     .section-home #content-core ol:last-of-type li:nth-last-child(1):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li {
-      width: 24em; }
+      width: 60%; }
     .section-home #content-core ol:last-of-type li:nth-last-child(2):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li {
-      width: 24em; }
+      width: 40%; }
     .section-home #content-core ol:last-of-type li:nth-last-child(3):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li {
-      width: 16em; }
+      width: 25%; }
+    .section-home #content-core ol:last-of-type li:nth-last-child(4):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li {
+      width: 18%; }
     .section-home #content-core ol:last-of-type li a:last-of-type {
       position: absolute;
       bottom: 1em;
@@ -419,12 +420,10 @@ ul#portal-globalnav {
       white-space: normal;
       font-weight: bold;
       font-size: 110%;
-      background: -webkit-linear-gradient(top, rgba(153, 204, 102, 0), rgba(153, 204, 102, 0.1));
       background: linear-gradient(to bottom, rgba(153, 204, 102, 0), rgba(153, 204, 102, 0.1));
       background-repeat: no-repeat;
       background-position-y: 3.25em;
-      -webkit-transition: 0.3s;
-              transition: 0.3s; }
+      transition: 0.3s; }
       .section-home #content-core ol:last-of-type li a:first-of-type:after {
         display: none; }
       .section-home #content-core ol:last-of-type li a:first-of-type:hover {
@@ -458,9 +457,9 @@ ul#portal-globalnav {
   .section-contact #content-core ol:last-of-type li,
   .section-about-the-dro #content-core ol:last-of-type li {
     width: 12em;
+    min-width: 12em;
     min-height: 11em;
     font-size: 80%;
-    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), -webkit-linear-gradient(top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
     background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), linear-gradient(to bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
     background-color: #fff;
     display: inline-block;
@@ -479,7 +478,7 @@ ul#portal-globalnav {
     .section-contact #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li,
     .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(1):first-child,
     .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li {
-      width: 24em; }
+      width: 60%; }
     .section-the-facility #content-core ol:last-of-type li:nth-last-child(2):first-child, .section-the-facility #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li,
     .section-the-local-region #content-core ol:last-of-type li:nth-last-child(2):first-child,
     .section-the-local-region #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li,
@@ -489,7 +488,7 @@ ul#portal-globalnav {
     .section-contact #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li,
     .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(2):first-child,
     .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li {
-      width: 24em; }
+      width: 40%; }
     .section-the-facility #content-core ol:last-of-type li:nth-last-child(3):first-child, .section-the-facility #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li,
     .section-the-local-region #content-core ol:last-of-type li:nth-last-child(3):first-child,
     .section-the-local-region #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li,
@@ -499,7 +498,17 @@ ul#portal-globalnav {
     .section-contact #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li,
     .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(3):first-child,
     .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li {
-      width: 16em; }
+      width: 25%; }
+    .section-the-facility #content-core ol:last-of-type li:nth-last-child(4):first-child, .section-the-facility #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li,
+    .section-the-local-region #content-core ol:last-of-type li:nth-last-child(4):first-child,
+    .section-the-local-region #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li,
+    .section-experiences #content-core ol:last-of-type li:nth-last-child(4):first-child,
+    .section-experiences #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li,
+    .section-contact #content-core ol:last-of-type li:nth-last-child(4):first-child,
+    .section-contact #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li,
+    .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(4):first-child,
+    .section-about-the-dro #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li {
+      width: 18%; }
     .section-the-facility #content-core ol:last-of-type li a:last-of-type,
     .section-the-local-region #content-core ol:last-of-type li a:last-of-type,
     .section-experiences #content-core ol:last-of-type li a:last-of-type,
@@ -535,12 +544,10 @@ ul#portal-globalnav {
       white-space: normal;
       font-weight: bold;
       font-size: 110%;
-      background: -webkit-linear-gradient(top, rgba(153, 204, 102, 0), rgba(153, 204, 102, 0.1));
       background: linear-gradient(to bottom, rgba(153, 204, 102, 0), rgba(153, 204, 102, 0.1));
       background-repeat: no-repeat;
       background-position-y: 3.25em;
-      -webkit-transition: 0.3s;
-              transition: 0.3s; }
+      transition: 0.3s; }
       .section-the-facility #content-core ol:last-of-type li a:first-of-type:after,
       .section-the-local-region #content-core ol:last-of-type li a:first-of-type:after,
       .section-experiences #content-core ol:last-of-type li a:first-of-type:after,
@@ -566,7 +573,7 @@ ul#portal-globalnav {
   margin-top: 0; }
 .section-home:not(.template-atct_edit) #portal-footer-wrapper {
   margin-top: 0;
-  border-top-color: #fcfcfc; }
+  border-top-color: #f8f8f8; }
 .section-home:not(.template-atct_edit) #content-core {
   margin-top: 0; }
 .section-home:not(.template-atct_edit) #content {
@@ -575,7 +582,7 @@ ul#portal-globalnav {
 .section-home:not(.template-atct_edit) #content .documentFirstHeading {
   margin: 0 -2%;
   padding: 0 2%;
-  background: #fcfcfc;
+  background: #f8f8f8;
   padding: 1em 0;
   font-weight: 100;
   text-align: center;
@@ -584,7 +591,7 @@ ul#portal-globalnav {
 .section-home:not(.template-atct_edit) #content div.fancywrapper {
   margin: 0 -2%;
   padding: 0 2%;
-  background: #fcfcfc;
+  background: #f8f8f8;
   text-align: center; }
 .section-home:not(.template-atct_edit) #content div.video {
   display: inline-block;
@@ -610,7 +617,8 @@ ul#portal-globalnav {
     box-sizing: border-box;
     background-color: #fff;
     line-height: 1.4;
-    box-shadow: 0 0 3px #fcfcfc;
+    box-shadow: 0 0 3px #f8f8f8;
+    background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 7.5px, rgba(153, 204, 102, 0) 22.5px), linear-gradient(to bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 7.5px, rgba(153, 204, 102, 0) 22.5px);
     position: relative;
     min-height: 117px;
     border-bottom-left-radius: 57.5px;
@@ -662,7 +670,6 @@ ul#portal-globalnav {
   margin: 0; }
   .subsection-visual-facilities-tour #content-core ol li img {
     background: #666;
-    background-image: -webkit-linear-gradient(top, #999, #333);
     background-image: linear-gradient(to bottom, #999, #333);
     display: block; }
 .subsection-visual-facilities-tour #content-core ol li:last-of-type {
@@ -677,8 +684,7 @@ ul#portal-globalnav {
   background: black;
   color: white;
   opacity: 0.9;
-  -webkit-transition: 0.2s;
-          transition: 0.2s; }
+  transition: 0.2s; }
   .subsection-visual-facilities-tour #content-core ol li:last-of-type:after {
     position: absolute;
     content: '';
@@ -687,12 +693,8 @@ ul#portal-globalnav {
     top: 0;
     right: 0;
     background: black;
-    -webkit-transform: skewX(30deg);
-        -ms-transform: skewX(30deg);
-            transform: skewX(30deg);
-    -webkit-transform-origin: top;
-        -ms-transform-origin: top;
-            transform-origin: top; }
+    transform: skewX(30deg);
+    transform-origin: top; }
 .subsection-visual-facilities-tour #content-core ol li:last-of-type:hover {
   opacity: 0; }
 
@@ -702,8 +704,7 @@ p.todo, td.todo, th.todo, h1.todo, h2.todo, h3.todo, h4.todo {
 p.todo {
   padding: 0.66em 1em;
   opacity: 0.5;
-  -webkit-transition: opacity 0.2s;
-          transition: opacity 0.2s; }
+  transition: opacity 0.2s; }
 
 p.todo:hover {
   opacity: 1; }
