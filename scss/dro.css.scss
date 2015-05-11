@@ -13,6 +13,9 @@
 $title-color: #096; // colour of title text.  Matches theme colour
 $bg-highlight: #9c6; // used in tab bgs, etc.  Matches theme color
 
+$shading: #3c2; // used for gradient edges etc
+
+
 $page-bg: #f8f8f8; // page background colour
 
 // banners & branding images for site sections
@@ -347,7 +350,6 @@ ul#portal-globalnav {
 	}
 }
 @mixin link-list-item($size: 'large') {
-	$color: #9c6;
 	$in-gap: 1em;
 	$out-gap: 0.5em;
 
@@ -355,8 +357,8 @@ ul#portal-globalnav {
 	min-width: 12em;
 	min-height: 11em;
 	font-size: 80%;
-	background-image: linear-gradient(to top,    rgba($color, 0.2), rgba($color, 0.05) 0.5 * $in-gap, rgba($color, 0) 1.5 * $in-gap),
-	                  linear-gradient(to bottom, rgba($color, 0.2), rgba($color, 0.05) 0.5 * $in-gap, rgba($color, 0) 1.5 * $in-gap);
+	background-image: linear-gradient(to top,    rgba($shading, 0.2), rgba($shading, 0.05) 0.5 * $in-gap, rgba($shading, 0) 1.5 * $in-gap),
+	                  linear-gradient(to bottom, rgba($shading, 0.2), rgba($shading, 0.05) 0.5 * $in-gap, rgba($shading, 0) 1.5 * $in-gap);
 
 	// this only works if this mixin is used inside an li. sorry.
 	&:nth-last-child(1):first-child, &:nth-last-child(1):first-child ~ li { width: 60%; }
@@ -370,8 +372,8 @@ ul#portal-globalnav {
 		$out-gap: 1em;
 		width: 14em;
 		min-height: 14em;
-		// border: 1px solid rgba($color, 0.5);
-		background-image: linear-gradient(to top, rgba($color, 0.2), rgba($color, 0.05) 1 * $in-gap, rgba($color, 0) 2 * $in-gap);
+		// border: 1px solid rgba($shading, 0.5);
+		background-image: linear-gradient(to top, rgba($shading, 0.2), rgba($shading, 0.05) 1 * $in-gap, rgba($shading, 0) 2 * $in-gap);
 	}
 
 	background-color: #fff;
@@ -391,7 +393,7 @@ ul#portal-globalnav {
 	// 		content: 'next...';
 	// 		font-size: 150%;
 	// 		color: white;
-	// 		text-shadow: 0 0 1px $color, 0 0 2px $color;
+	// 		text-shadow: 0 0 1px $shading, 0 0 2px $shading;
 	// 		position: absolute;
 	// 		top: -0.25em;
 	// 		left: -0.25em;
@@ -419,6 +421,7 @@ ul#portal-globalnav {
 		// font-weight: bold;
 		display: block;
 		height: $height;
+		line-height: 1.1;
 		margin: 0 auto $in-gap;
 		padding: $in-gap 0 0;
 		float: none;
@@ -445,7 +448,7 @@ ul#portal-globalnav {
 		@if ($size == 'small') {
 			font-weight: bold;
 			font-size: 110%;
-			background: linear-gradient(to bottom, rgba($bg-highlight, 0), rgba($bg-highlight, 0.1));
+			background: linear-gradient(to bottom, rgba($shading, 0), rgba($shading, 0.1));
 			background-repeat: no-repeat;
 			background-position-y: $height - $in-gap/4;
 			transition: 0.3s;
@@ -571,7 +574,7 @@ ul#portal-globalnav {
 
 				box-shadow: 0 0 3px $page-bg;
 
-				$color: #9c6;
+				$color: $shading;
 				background-image: linear-gradient(to top,    rgba($color, 0.2), rgba($color, 0.05) 0.5 * $padding, rgba($color, 0) 1.5 * $padding),
 	        			          linear-gradient(to bottom, rgba($color, 0.2), rgba($color, 0.05) 0.5 * $padding, rgba($color, 0) 1.5 * $padding);
 

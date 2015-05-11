@@ -6,8 +6,7 @@
   box-shadow: 0 0 5px #ccc;
   overflow: hidden;
   height: 4.36em;
-  -webkit-transition: height 0.5s;
-          transition: height 0.5s; }
+  transition: height 0.5s; }
   .dro-calendar.cals-1 {
     height: 4.36em; }
   .dro-calendar.cals-2 {
@@ -63,7 +62,6 @@
       top: 0;
       width: 8em;
       color: white;
-      background-image: -webkit-repeating-linear-gradient(top, rgba(0, 119, 68, 0.8), #007744 3.36em);
       background-image: repeating-linear-gradient(to bottom, rgba(0, 119, 68, 0.8), #007744 3.36em); }
       .dro-calendar .droc-wrap .droc-titles .droc-title {
         display: block;
@@ -80,7 +78,6 @@
       padding-bottom: 1em;
       overflow-x: scroll;
       overflow-y: hidden;
-      background-image: -webkit-repeating-linear-gradient(top, rgba(0, 119, 68, 0.05), rgba(0, 119, 68, 0) 3.36em);
       background-image: repeating-linear-gradient(to bottom, rgba(0, 119, 68, 0.05), rgba(0, 119, 68, 0) 3.36em); }
     .dro-calendar .droc-wrap .droc-cal {
       display: block;
@@ -100,17 +97,14 @@
       border-width: 0 1px;
       border-color: #aa3;
       background-color: #e0e096;
-      background-image: -webkit-linear-gradient(top, #e0e096, #f7f7e5);
       background-image: linear-gradient(to bottom, #e0e096, #f7f7e5); }
       .dro-calendar .droc-wrap .droc-block.good {
         border-color: #0b3;
         background-color: #55ff83;
-        background-image: -webkit-linear-gradient(top, #55ff83, #bbffce);
         background-image: linear-gradient(to bottom, #55ff83, #bbffce); }
       .dro-calendar .droc-wrap .droc-block.alert {
         border-color: #a33;
         background-color: #e09696;
-        background-image: -webkit-linear-gradient(top, #e09696, #f1d1d1);
         background-image: linear-gradient(to bottom, #e09696, #f1d1d1); }
       .dro-calendar .droc-wrap .droc-block span {
         font-size: 90%;
@@ -123,7 +117,6 @@
       .dro-calendar .droc-wrap .droc-cal.reference .droc-block {
         height: 1.92em;
         top: 0.72em;
-        background: -webkit-linear-gradient(top, rgba(0, 119, 68, 0.1), rgba(0, 119, 68, 0.2));
         background: linear-gradient(to bottom, rgba(0, 119, 68, 0.1), rgba(0, 119, 68, 0.2));
         border-color: #074;
         border-radius: 0; }
@@ -149,7 +142,6 @@
 
 body {
   background-color: #f8f8f8;
-  background-image: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/dro-banner);
   background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 50%, white), url(/dro/media/dro-banner);
   background-size: 150% 164px;
   background-repeat: no-repeat;
@@ -158,7 +150,6 @@ body {
 #visual-portal-wrapper {
   border: none;
   background: #fff;
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 165px, white 165px);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 165px, white 165px); }
 
 #portal-breadcrumbs {
@@ -171,7 +162,6 @@ dl.portlet {
   background-color: #f8f8f8; }
   dl.portlet dt.portletHeader {
     background-color: #006644;
-    background-image: -webkit-linear-gradient(top, #096, #006644);
     background-image: linear-gradient(to bottom, #096, #006644); }
 
 #portal-top {
@@ -184,9 +174,7 @@ dl.portlet {
   background-size: cover; }
 
 ul#portal-globalnav {
-  background: -webkit-linear-gradient(top, rgba(153, 204, 102, 0.1), rgba(153, 204, 102, 0.9));
   background: linear-gradient(to bottom, rgba(153, 204, 102, 0.1), rgba(153, 204, 102, 0.9));
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
   font-size: inherit;
   color: inherit;
@@ -203,8 +191,7 @@ ul#portal-globalnav {
       height: 41px;
       text-shadow: 0 0 2px #fff, 0 0 4px #fff;
       opacity: 0.7;
-      -webkit-transition: 0.1s;
-              transition: 0.1s;
+      transition: 0.1s;
       color: inherit; }
     ul#portal-globalnav li#portaltab-experiences a, ul#portal-globalnav li#portaltab-learning-and-teaching a, ul#portal-globalnav li#portaltab-research a {
       font-size: 85%;
@@ -265,7 +252,6 @@ ul#portal-globalnav {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/facility) no-repeat center center;
   background-color: #096;
-  background-image: url(/dro/media/photo-headings/facility), -webkit-linear-gradient(top, #096, black);
   background-image: url(/dro/media/photo-headings/facility), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
@@ -278,7 +264,6 @@ ul#portal-globalnav {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/about) no-repeat center center;
   background-color: #096;
-  background-image: url(/dro/media/photo-headings/about), -webkit-linear-gradient(top, #096, black);
   background-image: url(/dro/media/photo-headings/about), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
@@ -291,7 +276,6 @@ ul#portal-globalnav {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/region) no-repeat center center;
   background-color: #096;
-  background-image: url(/dro/media/photo-headings/region), -webkit-linear-gradient(top, #096, black);
   background-image: url(/dro/media/photo-headings/region), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
@@ -304,7 +288,6 @@ ul#portal-globalnav {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/experiences) no-repeat center center;
   background-color: #096;
-  background-image: url(/dro/media/photo-headings/experiences), -webkit-linear-gradient(top, #096, black);
   background-image: url(/dro/media/photo-headings/experiences), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
@@ -317,7 +300,6 @@ ul#portal-globalnav {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/research) no-repeat center center;
   background-color: #096;
-  background-image: url(/dro/media/photo-headings/research), -webkit-linear-gradient(top, #096, black);
   background-image: url(/dro/media/photo-headings/research), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
@@ -330,7 +312,6 @@ ul#portal-globalnav {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/learning-and-teaching) no-repeat center center;
   background-color: #096;
-  background-image: url(/dro/media/photo-headings/learning-and-teaching), -webkit-linear-gradient(top, #096, black);
   background-image: url(/dro/media/photo-headings/learning-and-teaching), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
@@ -365,13 +346,11 @@ ul#portal-globalnav {
     min-width: 12em;
     min-height: 11em;
     font-size: 80%;
-    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), -webkit-linear-gradient(top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
-    background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), linear-gradient(to bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
+    background-image: linear-gradient(to top, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 0.5em, rgba(51, 204, 34, 0) 1.5em), linear-gradient(to bottom, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 0.5em, rgba(51, 204, 34, 0) 1.5em);
     font-size: 90%;
     width: 14em;
     min-height: 14em;
-    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 1em, rgba(153, 204, 102, 0) 2em);
-    background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 1em, rgba(153, 204, 102, 0) 2em);
+    background-image: linear-gradient(to top, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 1em, rgba(51, 204, 34, 0) 2em);
     background-color: #fff;
     display: inline-block;
     position: relative;
@@ -415,6 +394,7 @@ ul#portal-globalnav {
       text-align: center;
       display: block;
       height: 3.5em;
+      line-height: 1.1;
       margin: 0 auto 1em;
       padding: 1em 0 0;
       float: none;
@@ -425,7 +405,6 @@ ul#portal-globalnav {
       margin-bottom: 0.5em;
       color: rgba(255, 255, 255, 0.9);
       background: #096;
-      background: -webkit-linear-gradient(top, rgba(0, 153, 102, 0.8), #009966);
       background: linear-gradient(to bottom, rgba(0, 153, 102, 0.8), #009966);
       border-radius: 6px;
       padding-left: 0.5em;
@@ -459,8 +438,7 @@ ul#portal-globalnav {
     min-width: 12em;
     min-height: 11em;
     font-size: 80%;
-    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), -webkit-linear-gradient(top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
-    background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), linear-gradient(to bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
+    background-image: linear-gradient(to top, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 0.5em, rgba(51, 204, 34, 0) 1.5em), linear-gradient(to bottom, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 0.5em, rgba(51, 204, 34, 0) 1.5em);
     background-color: #fff;
     display: inline-block;
     position: relative;
@@ -493,6 +471,7 @@ ul#portal-globalnav {
       text-align: center;
       display: block;
       height: 3.5em;
+      line-height: 1.1;
       margin: 0 auto 1em;
       padding: 1em 0 0;
       float: none;
@@ -500,12 +479,10 @@ ul#portal-globalnav {
       white-space: normal;
       font-weight: bold;
       font-size: 110%;
-      background: -webkit-linear-gradient(top, rgba(153, 204, 102, 0), rgba(153, 204, 102, 0.1));
-      background: linear-gradient(to bottom, rgba(153, 204, 102, 0), rgba(153, 204, 102, 0.1));
+      background: linear-gradient(to bottom, rgba(51, 204, 34, 0), rgba(51, 204, 34, 0.1));
       background-repeat: no-repeat;
       background-position-y: 3.25em;
-      -webkit-transition: 0.3s;
-              transition: 0.3s; }
+      transition: 0.3s; }
       .section-home #content-core ol:last-of-type li a:first-of-type:after {
         display: none; }
       .section-home #content-core ol:last-of-type li a:first-of-type:hover {
@@ -542,8 +519,7 @@ ul#portal-globalnav {
     min-width: 12em;
     min-height: 11em;
     font-size: 80%;
-    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), -webkit-linear-gradient(top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
-    background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em), linear-gradient(to bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 0.5em, rgba(153, 204, 102, 0) 1.5em);
+    background-image: linear-gradient(to top, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 0.5em, rgba(51, 204, 34, 0) 1.5em), linear-gradient(to bottom, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 0.5em, rgba(51, 204, 34, 0) 1.5em);
     background-color: #fff;
     display: inline-block;
     position: relative;
@@ -620,6 +596,7 @@ ul#portal-globalnav {
       text-align: center;
       display: block;
       height: 3.5em;
+      line-height: 1.1;
       margin: 0 auto 1em;
       padding: 1em 0 0;
       float: none;
@@ -627,12 +604,10 @@ ul#portal-globalnav {
       white-space: normal;
       font-weight: bold;
       font-size: 110%;
-      background: -webkit-linear-gradient(top, rgba(153, 204, 102, 0), rgba(153, 204, 102, 0.1));
-      background: linear-gradient(to bottom, rgba(153, 204, 102, 0), rgba(153, 204, 102, 0.1));
+      background: linear-gradient(to bottom, rgba(51, 204, 34, 0), rgba(51, 204, 34, 0.1));
       background-repeat: no-repeat;
       background-position-y: 3.25em;
-      -webkit-transition: 0.3s;
-              transition: 0.3s; }
+      transition: 0.3s; }
       .subsection-the-facility #content-core ol:last-of-type li a:first-of-type:after,
       .section-the-local-region #content-core ol:last-of-type li a:first-of-type:after,
       .section-experiences #content-core ol:last-of-type li a:first-of-type:after,
@@ -703,8 +678,7 @@ ul#portal-globalnav {
     background-color: #fff;
     line-height: 1.4;
     box-shadow: 0 0 3px #f8f8f8;
-    background-image: -webkit-linear-gradient(bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 7.5px, rgba(153, 204, 102, 0) 22.5px), -webkit-linear-gradient(top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 7.5px, rgba(153, 204, 102, 0) 22.5px);
-    background-image: linear-gradient(to top, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 7.5px, rgba(153, 204, 102, 0) 22.5px), linear-gradient(to bottom, rgba(153, 204, 102, 0.2), rgba(153, 204, 102, 0.05) 7.5px, rgba(153, 204, 102, 0) 22.5px);
+    background-image: linear-gradient(to top, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 7.5px, rgba(51, 204, 34, 0) 22.5px), linear-gradient(to bottom, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 7.5px, rgba(51, 204, 34, 0) 22.5px);
     position: relative;
     min-height: 117px;
     border-bottom-left-radius: 57.5px;
@@ -751,7 +725,6 @@ ul#portal-globalnav {
   margin: 0; }
   .subsection-visual-facilities-tour #content-core ol li img {
     background: #666;
-    background-image: -webkit-linear-gradient(top, #999, #333);
     background-image: linear-gradient(to bottom, #999, #333);
     display: block; }
 .subsection-visual-facilities-tour #content-core ol li:last-of-type {
@@ -766,8 +739,7 @@ ul#portal-globalnav {
   background: black;
   color: white;
   opacity: 0.9;
-  -webkit-transition: 0.2s;
-          transition: 0.2s; }
+  transition: 0.2s; }
   .subsection-visual-facilities-tour #content-core ol li:last-of-type:after {
     position: absolute;
     content: '';
@@ -776,12 +748,8 @@ ul#portal-globalnav {
     top: 0;
     right: 0;
     background: black;
-    -webkit-transform: skewX(30deg);
-        -ms-transform: skewX(30deg);
-            transform: skewX(30deg);
-    -webkit-transform-origin: top;
-        -ms-transform-origin: top;
-            transform-origin: top; }
+    transform: skewX(30deg);
+    transform-origin: top; }
 .subsection-visual-facilities-tour #content-core ol li:last-of-type:hover {
   opacity: 0; }
 
@@ -791,8 +759,7 @@ p.todo, td.todo, th.todo, h1.todo, h2.todo, h3.todo, h4.todo {
 p.todo {
   padding: 0.66em 1em;
   opacity: 0.5;
-  -webkit-transition: opacity 0.2s;
-          transition: opacity 0.2s; }
+  transition: opacity 0.2s; }
 
 p.todo:hover {
   opacity: 1; }
