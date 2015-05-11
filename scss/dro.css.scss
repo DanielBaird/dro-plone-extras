@@ -163,6 +163,103 @@ ul#portal-globalnav {
 }
 
 
+/////////////////////////////////////////////////////////////// forms
+
+#content form {
+
+	$value-indent: 1%;
+
+	input, select, textarea {
+		font-size: inherit;
+		max-width: 95%;
+		padding: 0.25em;
+	}
+
+	.field {
+		padding-left: $value-indent;
+		margin: 0 0 2em;
+	}
+
+	fieldset {
+		// fix rediculous width bug in many browsers
+		// http://stackoverflow.com/questions/17408815
+		display: table-cell;
+		min-width: 0;
+
+		// fields that are the first in a fieldset don't need
+		// as much spacing.
+		//
+		// first-of-type doesn't work coz .field is a div and there
+		// are other divs before it, like the error showing div
+		// .field:first-of-type { margin-top: 0.5em; }
+		.field:last-child    { margin-bottom: 0.5em; }
+
+		border: none;
+		border: 1px solid darken($page-bg, 10%);
+		border-width: 1px 0 1px 0.66em;
+		border-top-left-radius: 1.5em;
+		border-bottom-left-radius: 1.5em;
+
+		margin: 0 0 0.5em;
+
+		legend { font-size: inherit; }
+	}
+
+	label, .label, label.formQuestion {
+		margin-left: -1 * $value-indent;
+		font-weight: bold;
+		color: darken($title-color, 15%);
+		font-size: 90%;
+	}
+
+	input[type=checkbox] ~ label,
+	input[type=radio] ~ label {
+		// this targets labels for checkbox or radio buttons.
+		// Plone just puts them next to each other without a wrapper,
+		// so we have to use sibling selectors.
+		font-weight: normal;
+		font-size: inherit;
+		color: inherit;
+		margin-left: 0.5em;
+	}
+
+	// .ArchetypesSelectionWidget, .ArchetypesBooleanWidget {
+	// 	label {
+	// 		// this targets the text after a checkbox or radio btn.
+	// 		// (a .label is used to label the whole set, so not
+	// 		// targetted here).
+	// 		font-weight: normal;
+	// 		font-size: inherit;
+	// 		color: inherit;
+	// 		margin-left: 0.5em;
+	// 	}
+	// 	select ~ label {
+	// 		margin-left: -1 * $value-indent;
+	// 		font-weight: bold;
+	// 		color: darken($title-color, 15%);
+	// 		font-size: 90%;
+	// 	}
+	// }
+
+	.formHelp {
+		font-size: 90%;
+	}
+
+	.fieldErrorBox:empty { display: none; }
+
+	.formControls {
+		input[type=button], input[type=submit] {
+			padding: 0 2em;
+			line-height: 2;
+			border-radius: 3px;
+			cursor: pointer;
+			background: #eee;
+			border: 2px outset #eee;
+		}
+	}
+}
+
+
 /////////////////////////////////////////////////////////////////////
 // specific page styles /////////////////////////////////////////////
 

@@ -218,6 +218,49 @@ ul#portal-globalnav {
       text-shadow: none;
       color: inherit; }
 
+#content form input, #content form select, #content form textarea {
+  font-size: inherit;
+  max-width: 95%;
+  padding: 0.25em; }
+#content form .field {
+  padding-left: 1%;
+  margin: 0 0 2em; }
+#content form fieldset {
+  display: table-cell;
+  min-width: 0;
+  border: none;
+  border: 1px solid #dfdfdf;
+  border-width: 1px 0 1px 0.66em;
+  border-top-left-radius: 1.5em;
+  border-bottom-left-radius: 1.5em;
+  margin: 0 0 0.5em; }
+  #content form fieldset .field:last-child {
+    margin-bottom: 0.5em; }
+  #content form fieldset legend {
+    font-size: inherit; }
+#content form label, #content form .label, #content form label.formQuestion {
+  margin-left: -1%;
+  font-weight: bold;
+  color: #004d33;
+  font-size: 90%; }
+#content form input[type=checkbox] ~ label,
+#content form input[type=radio] ~ label {
+  font-weight: normal;
+  font-size: inherit;
+  color: inherit;
+  margin-left: 0.5em; }
+#content form .formHelp {
+  font-size: 90%; }
+#content form .fieldErrorBox:empty {
+  display: none; }
+#content form .formControls input[type=button], #content form .formControls input[type=submit] {
+  padding: 0 2em;
+  line-height: 2;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #eee;
+  border: 2px outset #eee; }
+
 .section-the-facility #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/facility) no-repeat center center;
