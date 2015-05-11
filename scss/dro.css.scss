@@ -466,7 +466,7 @@ ul#portal-globalnav {
 	#content-core ol:last-of-type {
 		margin-left: 0;
 		@include link-list;
-		li { @include link-list-item; }
+		li { @include link-list-item('large'); }
 	}
 }
 
@@ -486,9 +486,10 @@ ul#portal-globalnav {
 .section-the-local-region,
 .section-experiences,
 .section-contact,
+.section-booking-forms,
 .section-about-the-dro
 {
-	#content-core ol:last-of-type {
+	#content-core > * > ol:last-of-type {
 		margin-left: 0;
 		@include link-list;
 		li { @include link-list-item('small'); }
@@ -629,19 +630,12 @@ ul#portal-globalnav {
 	}
 }
 
-// .flexbox .section-home:not(.template-atct_edit) {
-// 	#content {
-// 		// the list of main features, FLEXBOX version
-// 		ul.features {
-// 			display: flex;
-// 			flex-direction: column;
-// 			li {
-// 				width: auto;
-// 				flex: 0 1 33%;
-// 			}
-// 		}
-// 	}
-// }
+
+//////////////////////////////////////////////////////////// book now
+
+.subsection-booking-and-enquiry-forms #content-core {
+	table.plain { width: 100% }
+}
 
 
 ////////////////////////////////////////////////////////// photo tour
