@@ -153,6 +153,10 @@ ul#portal-globalnav {
 			font-size: 85%;
 			font-weight: bold;
 		}
+		&#portaltab-editing a {
+			color: red;
+		}
+
 		&.selected a {
 			opacity: 1;
 			text-shadow: none;
@@ -698,6 +702,18 @@ ul#portal-globalnav {
 
 	}
 	ol li:last-of-type:hover { opacity: 0; }
+}
+
+
+//////////////////////////////////////////////// editing instructions
+
+.section-editing {
+	#content p img {
+		transform: rotate(-1deg);
+		padding: 1em;
+		margin: 1em;
+		box-shadow: 0 3px 5px #bbb;
+	}
 }
 
 

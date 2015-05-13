@@ -37,8 +37,8 @@ function buildViz(vizElement, dataRoot) {
 		function sorryNoData(name) {
 			return [
 				'data:text/html;charset=utf-8,',
-				encodeURIComponent('<html style="font-family: sans-serif; padding: 2em;">'),
-				encodeURIComponent('Sorry, no data for ' + name)
+				encodeURIComponent('<html style="font-family: sans-serif; padding: 1em; text-align: center;">'),
+				encodeURIComponent('Sorry, no data for ' + name + '.')
 			].join('');
 		}
 

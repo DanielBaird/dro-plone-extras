@@ -1453,11 +1453,11 @@ function ScapeLabelFactory(options, internals) {
 
 	var translate = new THREE.Matrix4().makeTranslation(i.x, i.y, i.z).multiply(i.offset);
 
-	// glowing ball
-	var glowGeom = new THREE.SphereGeometry(1.5, 32, 24);
-	glowGeom.applyMatrix(translate);
-	i.meshNames.push('glowbubble');
-	label.meshes.push(new THREE.Mesh(glowGeom, i.glowStuff));
+	// // glowing ball
+	// var glowGeom = new THREE.SphereGeometry(1.5, 32, 24);
+	// glowGeom.applyMatrix(translate);
+	// i.meshNames.push('glowbubble');
+	// label.meshes.push(new THREE.Mesh(glowGeom, i.glowStuff));
 
 	// text for the label
 	var nameGeom = new THREE.TextGeometry(i.labelText, {
