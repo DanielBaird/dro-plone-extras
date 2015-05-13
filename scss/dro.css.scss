@@ -35,6 +35,7 @@ $banner-height: $logo-height + $nav-tab-height; // banner height
 
 
 @import 'calendar';
+@import 'viz';
 
 
 // use this mixin to fake-remove the white content background and
@@ -635,6 +636,13 @@ ul#portal-globalnav {
 
 .subsection-booking-and-enquiry-forms #content-core {
 	table.plain { width: 100% }
+}
+
+
+////////////////////////////////////////////////////////// sensor viz
+
+.subsection-sensor-visualisation h1.documentFirstHeading {
+	display: none;
 }
 
 

@@ -5,35 +5,35 @@
   padding: 0;
   box-shadow: 0 0 5px #ccc;
   overflow: hidden;
-  height: 4.36em;
+  height: 65.6px;
   -webkit-transition: height 0.5s;
           transition: height 0.5s; }
   .dro-calendar.cals-1 {
-    height: 4.36em; }
+    height: 65.6px; }
   .dro-calendar.cals-2 {
-    height: 7.72em; }
+    height: 113.2px; }
   .dro-calendar.cals-3 {
-    height: 11.08em; }
+    height: 160.8px; }
   .dro-calendar.cals-4 {
-    height: 14.44em; }
+    height: 208.4px; }
   .dro-calendar.cals-5 {
-    height: 17.8em; }
+    height: 256.0px; }
   .dro-calendar.cals-6 {
-    height: 21.16em; }
+    height: 303.6px; }
   .dro-calendar.cals-7 {
-    height: 24.52em; }
+    height: 351.2px; }
   .dro-calendar.cals-8 {
-    height: 27.88em; }
+    height: 398.8px; }
   .dro-calendar.cals-9 {
-    height: 31.24em; }
+    height: 446.4px; }
   .dro-calendar.cals-10 {
-    height: 34.6em; }
+    height: 494.0px; }
   .dro-calendar.cals-11 {
-    height: 37.96em; }
+    height: 541.6px; }
   .dro-calendar.cals-12 {
-    height: 41.32em; }
+    height: 589.2px; }
   .dro-calendar.cals-13 {
-    height: 44.68em; }
+    height: 636.8px; }
   .dro-calendar .droc-wrap {
     width: 100%;
     position: relative;
@@ -42,58 +42,60 @@
       box-sizing: border-box; }
     .dro-calendar .droc-wrap .droc-left, .dro-calendar .droc-wrap .droc-right {
       position: absolute;
-      height: 3.024em;
-      width: 1.68em;
-      top: 0.168em;
+      height: 42.84px;
+      width: 23.8px;
+      top: 2.38px;
       border: 0;
       font-size: inherit;
-      line-height: 2.688em;
+      line-height: 38.08px;
       text-align: center;
       color: white;
       background: #074; }
       .dro-calendar .droc-wrap .droc-left:hover, .dro-calendar .droc-wrap .droc-right:hover {
         background: #00aa61; }
     .dro-calendar .droc-wrap .droc-left {
-      left: 8.168em; }
+      left: 132.38px; }
     .dro-calendar .droc-wrap .droc-right {
-      right: 0.168em; }
+      right: 2.38px; }
     .dro-calendar .droc-wrap .droc-titles {
       position: absolute;
       left: 0;
       top: 0;
-      width: 8em;
+      width: 130px;
       color: white;
-      background-image: -webkit-repeating-linear-gradient(top, rgba(0, 119, 68, 0.8), #007744 3.36em);
-      background-image: repeating-linear-gradient(to bottom, rgba(0, 119, 68, 0.8), #007744 3.36em); }
+      background-image: -webkit-repeating-linear-gradient(top, rgba(0, 119, 68, 0.8), #007744 47.6px);
+      background-image: repeating-linear-gradient(to bottom, rgba(0, 119, 68, 0.8), #007744 47.6px); }
       .dro-calendar .droc-wrap .droc-titles .droc-title {
         display: block;
-        height: 3.36em;
+        height: 47.6px;
         padding-left: 0.5em;
-        line-height: 3.36em;
+        line-height: 47.6px;
         white-space: nowrap;
         overflow: ellipsis; }
     .dro-calendar .droc-wrap .droc-cals {
       position: absolute;
-      left: 8em;
+      left: 130px;
       top: 0;
       right: 0;
-      padding-bottom: 1em;
+      padding-bottom: 18px;
       overflow-x: scroll;
       overflow-y: hidden;
-      background-image: -webkit-repeating-linear-gradient(top, rgba(0, 119, 68, 0.05), rgba(0, 119, 68, 0) 3.36em);
-      background-image: repeating-linear-gradient(to bottom, rgba(0, 119, 68, 0.05), rgba(0, 119, 68, 0) 3.36em); }
+      background-image: -webkit-repeating-linear-gradient(top, rgba(0, 119, 68, 0.05), rgba(0, 119, 68, 0) 47.6px);
+      background-image: repeating-linear-gradient(to bottom, rgba(0, 119, 68, 0.05), rgba(0, 119, 68, 0) 47.6px); }
     .dro-calendar .droc-wrap .droc-cal {
       display: block;
-      height: 3.36em;
-      line-height: 3.36em;
+      margin: 0;
+      padding: 0;
+      height: 47.6px;
+      line-height: 47.6px;
       white-space: nowrap; }
     .dro-calendar .droc-wrap .droc-block {
       display: inline-block;
       position: relative;
-      top: 0.48em;
+      top: 6.732px;
       text-align: center;
-      height: 2.4em;
-      line-height: 2.4em;
+      height: 34px;
+      line-height: 34px;
       overflow: hidden;
       border-radius: 4px;
       border: 0 solid #ccc;
@@ -115,14 +117,13 @@
       .dro-calendar .droc-wrap .droc-block span {
         font-size: 90%;
         position: relative;
-        top: -0.12em; }
+        top: -1.7px; }
     .dro-calendar .droc-wrap .droc-block.droc-gap {
       visibility: hidden; }
     .dro-calendar .droc-wrap .droc-cal.reference {
       opacity: 0.5; }
       .dro-calendar .droc-wrap .droc-cal.reference .droc-block {
-        height: 1.92em;
-        top: 0.72em;
+        height: 27.2px;
         background: -webkit-linear-gradient(top, rgba(0, 119, 68, 0.1), rgba(0, 119, 68, 0.2));
         background: linear-gradient(to bottom, rgba(0, 119, 68, 0.1), rgba(0, 119, 68, 0.2));
         border-color: #074;
@@ -130,7 +131,7 @@
     .dro-calendar .droc-wrap .droc-cal.dates {
       opacity: 1; }
       .dro-calendar .droc-wrap .droc-cal.dates .droc-block {
-        height: 3.36em;
+        height: 47.6px;
         top: 0;
         font-weight: bold;
         background: rgba(0, 119, 68, 0.2);
@@ -138,6 +139,75 @@
         border-left: none; }
         .dro-calendar .droc-wrap .droc-cal.dates .droc-block:nth-child(even) {
           background: rgba(0, 119, 68, 0.4); }
+
+.droviz-wrap {
+  clear: both;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  *zoom: 1; }
+  .droviz-wrap:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .droviz-wrap #info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #eee;
+    height: 3em;
+    line-height: 3em; }
+  .droviz-wrap #scape {
+    position: absolute;
+    top: 3em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: -webkit-linear-gradient(top, #87e0fd 0%, #87e0fd 10%, #0590ab 50%, #000033 66%, #000000 100%);
+    background: linear-gradient(to bottom, #87e0fd 0%, #87e0fd 10%, #0590ab 50%, #000033 66%, #000000 100%); }
+  .droviz-wrap #data {
+    position: absolute;
+    top: 4em;
+    right: 1em;
+    max-height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 500px; }
+  .droviz-wrap #data h1 {
+    font-size: inherit;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    margin: 0;
+    padding: 0.5em;
+    box-sizing: border-box;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 50, 0.75), rgba(0, 0, 50, 0.1));
+    background: linear-gradient(to right, rgba(0, 0, 50, 0.75), rgba(0, 0, 50, 0.1));
+    cursor: pointer; }
+  .droviz-wrap #data iframe {
+    border: none;
+    margin: 0;
+    width: 500px;
+    height: 300px;
+    background: -webkit-linear-gradient(top, rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.75));
+    background: linear-gradient(to bottom, rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.75)); }
+  .droviz-wrap #log {
+    display: none;
+    box-sizing: border-box;
+    font-size: 80%;
+    line-height: 1.1;
+    background: rgba(0, 0, 0, 0.66);
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 510px;
+    right: 0;
+    height: 200px;
+    padding: 1em;
+    border: none;
+    overflow-y: scroll; }
 
 #content {
   font-size: inherit; }
@@ -761,6 +831,9 @@ ul#portal-globalnav {
 
 .subsection-booking-and-enquiry-forms #content-core table.plain {
   width: 100%; }
+
+.subsection-sensor-visualisation h1.documentFirstHeading {
+  display: none; }
 
 .subsection-visual-facilities-tour #content-core ol {
   clear: both;

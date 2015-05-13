@@ -1,0 +1,6 @@
+{ "data": [
+	{ "id": "A", "posX": 10, "posY": 10 },
+	{ "id": "B", "posX": 30, "posY": 40 },
+	{ "id": "C", "posX": 60, "posY": 20 },
+	{ "id": "Sebastian", "posX": 80, "posY": 10 }
+] }

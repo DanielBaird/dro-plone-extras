@@ -6,10 +6,16 @@
 
 	clear: both;
 
-	$titles-width: 8em;
-	$block-height: 2.4em;
+	// // switched to pixels so rounding doesn't mess us up
+	// $titles-width: 8em;
+	// $block-height: 2.4em;
+	// $line-height: 1.4 * $block-height;
+	// $extra-scrollbar-pad: 1em;
+
+	$titles-width: 130px;
+	$block-height: 34px;
 	$line-height: 1.4 * $block-height;
-	$extra-scrollbar-pad: 1em;
+	$extra-scrollbar-pad: 18px;
 
 	$key-color: #26a;
 	$key-color: #074;
@@ -99,6 +105,8 @@
 
 		.droc-cal {
 			display: block;
+			margin: 0;
+			padding: 0;
 			height: $line-height;
 			line-height: $line-height;
 			white-space: nowrap;
@@ -109,7 +117,7 @@
 
 			// vertically centered
 			position: relative;
-			top: ($line-height - $block-height) / 2;
+			top: 0.99 * ($line-height - $block-height) / 2;
 
 			text-align: center;
 			height: $block-height;
@@ -151,7 +159,7 @@
 			.droc-block {
 				$ref-height: 0.8 * $block-height;
 				height: $ref-height;
-				top: ($line-height - $ref-height) / 2;
+				// line-height: $ref-height;
 				background: linear-gradient(to bottom, rgba($key-color, 0.1), rgba($key-color, 0.2));
 				border-color: $key-color;
 				border-radius: 0;

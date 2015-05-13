@@ -10,21 +10,19 @@ echo " * compiling css... "
 scss scss/dro.css.scss dist/dro.css
 autoprefixer --browsers "> 1%, last 2 versions, Firefox ESR, Opera 12.1" dist/dro.css
 
-# echo
-# echo
-# echo " * uploading css... "
-# curl --silent --insecure --request PUT 'https://research.jcu.edu.au/dro/dro_custom.css' \
-# --user dro-uploader:`cat ./dro-uploader-pass` \
-# --form "title=theme_css" \
-# --form "content_type:required=text/css" \
-# --form "precondition=" \
-# --form "manage_upload:method=Upload" \
-# --form "fileupload=@dist/dro.css;filename=dro.css;type=text/css" | grep 'aved change'
-
 echo
 echo " * compiling js... "
 cat js/dro-calendar.js js/dro.js > dist/dro.js
 
+echo
+popd
+echo " * done."
+
+
+
+# # couldn't convince plone to accept uploading via curl or wget.
+# # sorry, you'll have to upload the results yourself.
+#
 # echo
 # echo
 # echo " * uploading js... "
@@ -35,14 +33,6 @@ cat js/dro-calendar.js js/dro.js > dist/dro.js
 # --form "precondition=" \
 # --form "manage_upload:method=Upload" \
 # --form "fileupload=@dist/dro.js;filename=dro.js;type=application/x-javascript" | grep 'aved change'
-
-
-echo
-popd
-echo " * done."
-
-
-
 
 
 
