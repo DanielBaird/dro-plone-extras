@@ -53,6 +53,10 @@ $banner-height: $logo-height + $nav-tab-height; // banner height
 	margin-top: 2em;
 	&:first-of-type { margin-top: 0.5em }
 }
+#content-core ul {
+	// ULs are siblings to Ps so should have the same spacing
+	margin-bottom: 1em;
+}
 
 /////////////////////////////////////////////////// outer page layout
 
@@ -636,6 +640,34 @@ ul#portal-globalnav {
 }
 
 
+/////////////////////////////////////////////////////////// budgeting
+
+.subsection-budgeting #content-core {
+	// plone eats &nbsp; and other tricks to stop wrapping,
+	// so make spans in tables magical no-wrap elements.
+	table span {
+		white-space: nowrap;
+	}
+}
+
+
+////////////////////////////////////////////////// teaching resources
+
+.subsection-teaching-resources #content-core {
+	table.plain {
+		width: 100%;
+		ul {
+			// in table cells, ULs can be more conpact
+			margin-bottom: 0;
+			li { margin-bottom: 0; }
+		}
+		span {
+			white-space: nowrap;
+		}
+	}
+}
+
+
 //////////////////////////////////////////////////////////// book now
 
 .subsection-booking-and-enquiry-forms #content-core {
@@ -710,9 +742,9 @@ ul#portal-globalnav {
 .section-editing {
 	#content p img {
 		transform: rotate(-1deg);
-		padding: 1em;
+		padding: 0.66em 0.66em 1.5em;
 		margin: 1em;
-		box-shadow: 0 3px 5px #bbb;
+		box-shadow: -0.5px 3px 5px #ccc;
 	}
 }
 
