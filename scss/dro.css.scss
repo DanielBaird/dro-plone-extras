@@ -48,6 +48,11 @@ $banner-height: $logo-height + $nav-tab-height; // banner height
 
 /////////////////////////////////////////////// typography and format
 
+//body { font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif }
+body {
+	font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+	font-weight: 300;
+}
 #content { font-size: inherit; } // cure for Tiny Font Syndrome
 #content-core h2, #content-core h3 {
 	margin-top: 2em;
@@ -330,6 +335,7 @@ ul#portal-globalnav {
 .section-experiences      { @include title-photo-bg(/dro/media/photo-headings/experiences); }
 .section-research         { @include title-photo-bg(/dro/media/photo-headings/research); }
 .section-learning-and-teaching { @include title-photo-bg(/dro/media/photo-headings/learning-and-teaching); }
+.section-media            { @include title-photo-bg(/dro/media/photo-headings/media); }
 
 
 /////////////////////////////////////////////// photo-paragraph pages
@@ -459,11 +465,12 @@ ul#portal-globalnav {
 			font-size: 110%;
 			background: linear-gradient(to bottom, rgba($shading, 0), rgba($shading, 0.1));
 			background-repeat: no-repeat;
-			background-position-y: $height - $in-gap/4;
+			background-position: 0 $height - $in-gap/4;
 			transition: 0.3s;
 			&:hover {
-				background-position-y: 0;
+				background-position: 0 0;
 				text-decoration: underline;
+				color: $title-color ! important; // need to bust the "important" specified in existing theme css
 			}
 		}
 	}
@@ -492,6 +499,7 @@ ul#portal-globalnav {
 
 // minor out-links on normal page colour
 .subsection-the-facility,
+.subsection-teaching-resources,
 .section-the-local-region,
 .section-experiences,
 .section-contact,
