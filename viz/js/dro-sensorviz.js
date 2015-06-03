@@ -94,8 +94,8 @@ function buildViz(vizElement, dataRoot) {
 		var craneDir = 0.1;
 		var infoStaticText = $('#info').text();
 		dro.s = new Scape.Scene(dro.f, 'scape', {
-			currentDate: new Date(2000, 1, 1, 6),  // either string 'now' or a Date object
-			timeRatio: 200, // how many times faster than normal?
+			currentDate: new Date(2000, 1, 1, 9, 0),  // either string 'now' or a Date object
+			timeRatio: 0, // how many times faster than normal?
 			dateUpdate: function(date) {
 				// update the time display
 				hr = date.getHours();
