@@ -10,8 +10,8 @@
 //
 
 
-$title-color: #096; // colour of title text.  Matches theme colour
-$bg-highlight: #9c6; // used in tab bgs, etc.  Matches theme color
+$title-color: #074; // colour of title text.  Matches theme colour
+$bg-highlight: #074; // used in tab bgs, etc.  Matches theme color
 
 $shading: #3c2; // used for gradient edges etc
 
@@ -357,13 +357,13 @@ ul#portal-globalnav {
 	padding-bottom: 2em;
 
 	text-align: justify;
-	&:after {
-		content: '';
-		display: inline-block;
-		height: 0.1px;
-		width: 100%;
-		opacity: 0;
-	}
+	// &:after {
+	// 	content: '';
+	// 	display: inline-block;
+	// 	height: 0.1px;
+	// 	width: 100%;
+	// 	opacity: 0;
+	// }
 }
 @mixin link-list-item($size: 'large') {
 	$in-gap: 1em;
@@ -377,9 +377,9 @@ ul#portal-globalnav {
 	                  linear-gradient(to bottom, rgba($shading, 0.2), rgba($shading, 0.05) 0.5 * $in-gap, rgba($shading, 0) 1.5 * $in-gap);
 
 	// this only works if this mixin is used inside an li. sorry.
-	&:nth-last-child(1):first-child, &:nth-last-child(1):first-child ~ li { width: 60%; }
-	&:nth-last-child(2):first-child, &:nth-last-child(2):first-child ~ li { width: 40%; }
-	&:nth-last-child(3):first-child, &:nth-last-child(3):first-child ~ li { width: 25%; }
+	&:nth-last-child(1):first-child, &:nth-last-child(1):first-child ~ li { width: 33%; }
+	&:nth-last-child(2):first-child, &:nth-last-child(2):first-child ~ li { width: 26%; }
+	&:nth-last-child(3):first-child, &:nth-last-child(3):first-child ~ li { width: 23%; }
 	&:nth-last-child(4):first-child, &:nth-last-child(4):first-child ~ li { width: 18%; }
 
 	@if ($size == 'large') {
@@ -802,5 +802,3 @@ p.todo.todo-pic.todo-pic-6 { background-image: url(http://placecorgi.com/690/360
 p.todo.todo-pic.todo-pic-7 { background-image: url(http://placecorgi.com/790/370); }
 p.todo.todo-pic.todo-pic-8 { background-image: url(http://placecorgi.com/890/380); }
 p.todo.todo-pic.todo-pic-9 { background-image: url(http://placecorgi.com/990/390); }
-
-

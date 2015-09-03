@@ -247,9 +247,9 @@ body {
 dl.portlet {
   background-color: #f8f8f8; }
   dl.portlet dt.portletHeader {
-    background-color: #006644;
-    background-image: -webkit-linear-gradient(top, #096, #006644);
-    background-image: linear-gradient(to bottom, #096, #006644); }
+    background-color: #004427;
+    background-image: -webkit-linear-gradient(top, #074, #004427);
+    background-image: linear-gradient(to bottom, #074, #004427); }
 
 #portal-top {
   background-color: transparent; }
@@ -261,8 +261,8 @@ dl.portlet {
   background-size: cover; }
 
 ul#portal-globalnav {
-  background: -webkit-linear-gradient(top, rgba(153, 204, 102, 0.1), rgba(153, 204, 102, 0.9));
-  background: linear-gradient(to bottom, rgba(153, 204, 102, 0.1), rgba(153, 204, 102, 0.9));
+  background: -webkit-linear-gradient(top, rgba(0, 119, 68, 0.1), rgba(0, 119, 68, 0.9));
+  background: linear-gradient(to bottom, rgba(0, 119, 68, 0.1), rgba(0, 119, 68, 0.9));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
   font-size: inherit;
@@ -320,7 +320,7 @@ ul#portal-globalnav {
 #content form label, #content form .label, #content form label.formQuestion {
   margin-left: -1%;
   font-weight: bold;
-  color: #004d33;
+  color: #002a18;
   font-size: 90%; }
 #content form input[type=checkbox] ~ label,
 #content form input[type=radio] ~ label {
@@ -343,9 +343,9 @@ ul#portal-globalnav {
 .section-the-facility #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/facility) no-repeat center center;
-  background-color: #096;
-  background-image: url(/dro/media/photo-headings/facility), -webkit-linear-gradient(top, #096, black);
-  background-image: url(/dro/media/photo-headings/facility), linear-gradient(to bottom, #096, black);
+  background-color: #074;
+  background-image: url(/dro/media/photo-headings/facility), -webkit-linear-gradient(top, #074, black);
+  background-image: url(/dro/media/photo-headings/facility), linear-gradient(to bottom, #074, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -356,9 +356,9 @@ ul#portal-globalnav {
 .section-about-the-dro #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/about) no-repeat center center;
-  background-color: #096;
-  background-image: url(/dro/media/photo-headings/about), -webkit-linear-gradient(top, #096, black);
-  background-image: url(/dro/media/photo-headings/about), linear-gradient(to bottom, #096, black);
+  background-color: #074;
+  background-image: url(/dro/media/photo-headings/about), -webkit-linear-gradient(top, #074, black);
+  background-image: url(/dro/media/photo-headings/about), linear-gradient(to bottom, #074, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -369,9 +369,9 @@ ul#portal-globalnav {
 .section-the-local-region #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/region) no-repeat center center;
-  background-color: #096;
-  background-image: url(/dro/media/photo-headings/region), -webkit-linear-gradient(top, #096, black);
-  background-image: url(/dro/media/photo-headings/region), linear-gradient(to bottom, #096, black);
+  background-color: #074;
+  background-image: url(/dro/media/photo-headings/region), -webkit-linear-gradient(top, #074, black);
+  background-image: url(/dro/media/photo-headings/region), linear-gradient(to bottom, #074, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -382,9 +382,9 @@ ul#portal-globalnav {
 .section-experiences #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/experiences) no-repeat center center;
-  background-color: #096;
-  background-image: url(/dro/media/photo-headings/experiences), -webkit-linear-gradient(top, #096, black);
-  background-image: url(/dro/media/photo-headings/experiences), linear-gradient(to bottom, #096, black);
+  background-color: #074;
+  background-image: url(/dro/media/photo-headings/experiences), -webkit-linear-gradient(top, #074, black);
+  background-image: url(/dro/media/photo-headings/experiences), linear-gradient(to bottom, #074, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -395,9 +395,9 @@ ul#portal-globalnav {
 .section-research #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/research) no-repeat center center;
-  background-color: #096;
-  background-image: url(/dro/media/photo-headings/research), -webkit-linear-gradient(top, #096, black);
-  background-image: url(/dro/media/photo-headings/research), linear-gradient(to bottom, #096, black);
+  background-color: #074;
+  background-image: url(/dro/media/photo-headings/research), -webkit-linear-gradient(top, #074, black);
+  background-image: url(/dro/media/photo-headings/research), linear-gradient(to bottom, #074, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -408,9 +408,9 @@ ul#portal-globalnav {
 .section-learning-and-teaching #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/learning-and-teaching) no-repeat center center;
-  background-color: #096;
-  background-image: url(/dro/media/photo-headings/learning-and-teaching), -webkit-linear-gradient(top, #096, black);
-  background-image: url(/dro/media/photo-headings/learning-and-teaching), linear-gradient(to bottom, #096, black);
+  background-color: #074;
+  background-image: url(/dro/media/photo-headings/learning-and-teaching), -webkit-linear-gradient(top, #074, black);
+  background-image: url(/dro/media/photo-headings/learning-and-teaching), linear-gradient(to bottom, #074, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -421,9 +421,9 @@ ul#portal-globalnav {
 .section-media #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/media) no-repeat center center;
-  background-color: #096;
-  background-image: url(/dro/media/photo-headings/media), -webkit-linear-gradient(top, #096, black);
-  background-image: url(/dro/media/photo-headings/media), linear-gradient(to bottom, #096, black);
+  background-color: #074;
+  background-image: url(/dro/media/photo-headings/media), -webkit-linear-gradient(top, #074, black);
+  background-image: url(/dro/media/photo-headings/media), linear-gradient(to bottom, #074, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -444,13 +444,6 @@ ul#portal-globalnav {
   padding-top: 1em;
   padding-bottom: 2em;
   text-align: justify; }
-  .section-learning-and-teaching #content-core ol:last-of-type:after,
-  .section-research #content-core ol:last-of-type:after {
-    content: '';
-    display: inline-block;
-    height: 0.1px;
-    width: 100%;
-    opacity: 0; }
   .section-learning-and-teaching #content-core ol:last-of-type li,
   .section-research #content-core ol:last-of-type li {
     width: 12em;
@@ -475,15 +468,15 @@ ul#portal-globalnav {
     .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(1):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li,
     .section-research #content-core ol:last-of-type li:nth-last-child(1):first-child,
     .section-research #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li {
-      width: 60%; }
+      width: 33%; }
     .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(2):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li,
     .section-research #content-core ol:last-of-type li:nth-last-child(2):first-child,
     .section-research #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li {
-      width: 40%; }
+      width: 26%; }
     .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(3):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li,
     .section-research #content-core ol:last-of-type li:nth-last-child(3):first-child,
     .section-research #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li {
-      width: 25%; }
+      width: 23%; }
     .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(4):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li,
     .section-research #content-core ol:last-of-type li:nth-last-child(4):first-child,
     .section-research #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li {
@@ -503,7 +496,7 @@ ul#portal-globalnav {
     .section-research #content-core ol:last-of-type li a:first-of-type {
       position: static;
       box-sizing: border-box;
-      color: #096;
+      color: #074;
       text-align: center;
       display: block;
       height: 3.5em;
@@ -517,9 +510,9 @@ ul#portal-globalnav {
       margin: -0.41667em;
       margin-bottom: 0.5em;
       color: rgba(255, 255, 255, 0.9);
-      background: #096;
-      background: -webkit-linear-gradient(top, rgba(0, 153, 102, 0.8), #009966);
-      background: linear-gradient(to bottom, rgba(0, 153, 102, 0.8), #009966);
+      background: #074;
+      background: -webkit-linear-gradient(top, rgba(0, 119, 68, 0.8), #007744);
+      background: linear-gradient(to bottom, rgba(0, 119, 68, 0.8), #007744);
       border-radius: 6px;
       padding-left: 0.5em;
       padding-right: 0.5em; }
@@ -541,12 +534,6 @@ ul#portal-globalnav {
   padding-bottom: 2em;
   text-align: justify;
   text-align: right; }
-  .section-home #content-core ol:last-of-type:after {
-    content: '';
-    display: inline-block;
-    height: 0.1px;
-    width: 100%;
-    opacity: 0; }
   .section-home #content-core ol:last-of-type li {
     width: 12em;
     min-width: 12em;
@@ -563,11 +550,11 @@ ul#portal-globalnav {
     margin: 0.5em 0.33333em;
     border-radius: 2px; }
     .section-home #content-core ol:last-of-type li:nth-last-child(1):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li {
-      width: 60%; }
+      width: 33%; }
     .section-home #content-core ol:last-of-type li:nth-last-child(2):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(2):first-child ~ li {
-      width: 40%; }
+      width: 26%; }
     .section-home #content-core ol:last-of-type li:nth-last-child(3):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li {
-      width: 25%; }
+      width: 23%; }
     .section-home #content-core ol:last-of-type li:nth-last-child(4):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li {
       width: 18%; }
     .section-home #content-core ol:last-of-type li a:last-of-type {
@@ -582,7 +569,7 @@ ul#portal-globalnav {
     .section-home #content-core ol:last-of-type li a:first-of-type {
       position: static;
       box-sizing: border-box;
-      color: #096;
+      color: #074;
       text-align: center;
       display: block;
       height: 3.5em;
@@ -605,7 +592,7 @@ ul#portal-globalnav {
       .section-home #content-core ol:last-of-type li a:first-of-type:hover {
         background-position: 0 0;
         text-decoration: underline;
-        color: #096 !important; }
+        color: #074 !important; }
 
 .subsection-the-facility #content-core > * > ol:last-of-type,
 .subsection-teaching-resources #content-core > * > ol:last-of-type,
@@ -620,18 +607,6 @@ ul#portal-globalnav {
   padding-top: 1em;
   padding-bottom: 2em;
   text-align: justify; }
-  .subsection-the-facility #content-core > * > ol:last-of-type:after,
-  .subsection-teaching-resources #content-core > * > ol:last-of-type:after,
-  .section-the-local-region #content-core > * > ol:last-of-type:after,
-  .section-experiences #content-core > * > ol:last-of-type:after,
-  .section-contact #content-core > * > ol:last-of-type:after,
-  .section-booking-forms #content-core > * > ol:last-of-type:after,
-  .section-about-the-dro #content-core > * > ol:last-of-type:after {
-    content: '';
-    display: inline-block;
-    height: 0.1px;
-    width: 100%;
-    opacity: 0; }
   .subsection-the-facility #content-core > * > ol:last-of-type li,
   .subsection-teaching-resources #content-core > * > ol:last-of-type li,
   .section-the-local-region #content-core > * > ol:last-of-type li,
@@ -666,7 +641,7 @@ ul#portal-globalnav {
     .section-booking-forms #content-core > * > ol:last-of-type li:nth-last-child(1):first-child ~ li,
     .section-about-the-dro #content-core > * > ol:last-of-type li:nth-last-child(1):first-child,
     .section-about-the-dro #content-core > * > ol:last-of-type li:nth-last-child(1):first-child ~ li {
-      width: 60%; }
+      width: 33%; }
     .subsection-the-facility #content-core > * > ol:last-of-type li:nth-last-child(2):first-child, .subsection-the-facility #content-core > * > ol:last-of-type li:nth-last-child(2):first-child ~ li,
     .subsection-teaching-resources #content-core > * > ol:last-of-type li:nth-last-child(2):first-child,
     .subsection-teaching-resources #content-core > * > ol:last-of-type li:nth-last-child(2):first-child ~ li,
@@ -680,7 +655,7 @@ ul#portal-globalnav {
     .section-booking-forms #content-core > * > ol:last-of-type li:nth-last-child(2):first-child ~ li,
     .section-about-the-dro #content-core > * > ol:last-of-type li:nth-last-child(2):first-child,
     .section-about-the-dro #content-core > * > ol:last-of-type li:nth-last-child(2):first-child ~ li {
-      width: 40%; }
+      width: 26%; }
     .subsection-the-facility #content-core > * > ol:last-of-type li:nth-last-child(3):first-child, .subsection-the-facility #content-core > * > ol:last-of-type li:nth-last-child(3):first-child ~ li,
     .subsection-teaching-resources #content-core > * > ol:last-of-type li:nth-last-child(3):first-child,
     .subsection-teaching-resources #content-core > * > ol:last-of-type li:nth-last-child(3):first-child ~ li,
@@ -694,7 +669,7 @@ ul#portal-globalnav {
     .section-booking-forms #content-core > * > ol:last-of-type li:nth-last-child(3):first-child ~ li,
     .section-about-the-dro #content-core > * > ol:last-of-type li:nth-last-child(3):first-child,
     .section-about-the-dro #content-core > * > ol:last-of-type li:nth-last-child(3):first-child ~ li {
-      width: 25%; }
+      width: 23%; }
     .subsection-the-facility #content-core > * > ol:last-of-type li:nth-last-child(4):first-child, .subsection-the-facility #content-core > * > ol:last-of-type li:nth-last-child(4):first-child ~ li,
     .subsection-teaching-resources #content-core > * > ol:last-of-type li:nth-last-child(4):first-child,
     .subsection-teaching-resources #content-core > * > ol:last-of-type li:nth-last-child(4):first-child ~ li,
@@ -739,7 +714,7 @@ ul#portal-globalnav {
     .section-about-the-dro #content-core > * > ol:last-of-type li a:first-of-type {
       position: static;
       box-sizing: border-box;
-      color: #096;
+      color: #074;
       text-align: center;
       display: block;
       height: 3.5em;
@@ -774,7 +749,7 @@ ul#portal-globalnav {
       .section-about-the-dro #content-core > * > ol:last-of-type li a:first-of-type:hover {
         background-position: 0 0;
         text-decoration: underline;
-        color: #096 !important; }
+        color: #074 !important; }
 
 .section-home.template-atct_edit #content .fancywrapper {
   height: auto; }
@@ -863,7 +838,7 @@ ul#portal-globalnav {
       display: block;
       padding: 7.5px 0;
       font-size: 110%;
-      color: #096;
+      color: #074;
       text-shadow: 0 0 4px #fff, 0 0 7px #fff, 0 0 10px #fff; }
     .section-home:not(.template-atct_edit) #content ul.features li p {
       font-size: 90%;
