@@ -10,8 +10,8 @@
 //
 
 
-$title-color: #074; // colour of title text.  Matches theme colour
-$bg-highlight: #074; // used in tab bgs, etc.  Matches theme color
+$theme-color: #096; // original colour of title text
+$bg-highlight: #9c6; // used in tab bgs, etc.  Matches theme color
 
 $shading: #3c2; // used for gradient edges etc
 
@@ -53,7 +53,6 @@ body {
 	font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 	font-weight: 300;
 }
-#content { font-size: inherit; } // cure for Tiny Font Syndrome
 #content-core h2, #content-core h3 {
 	margin-top: 2em;
 	&:first-of-type { margin-top: 0.5em }
@@ -61,6 +60,18 @@ body {
 #content-core ul {
 	// ULs are siblings to Ps so should have the same spacing
 	margin-bottom: 1em;
+}
+
+#content {
+	font-size: inherit; // cure for Tiny Font Syndrome
+	h1, h2, h3 {
+		letter-spacing: -0.01em;
+		// go a bit darker than default theme
+		color: darken($theme-color, 10%);
+	}
+	h2 {
+		border-bottom: 1px solid fade-out($theme-color, 0.66);
+	}
 }
 
 /////////////////////////////////////////////////// outer page layout
@@ -104,8 +115,8 @@ body {
 dl.portlet {
 	background-color: $page-bg;
 	dt.portletHeader {
-		background-color: darken($title-color, 10%);
-		background-image: linear-gradient(to bottom, $title-color, darken($title-color, 10%));
+		background-color: darken($theme-color, 10%);
+		background-image: linear-gradient(to bottom, $theme-color, darken($theme-color, 10%));
 	}
 }
 
@@ -226,7 +237,7 @@ ul#portal-globalnav {
 	label, .label, label.formQuestion {
 		margin-left: -1 * $value-indent;
 		font-weight: bold;
-		color: darken($title-color, 15%);
+		color: darken($theme-color, 15%);
 		font-size: 90%;
 	}
 
@@ -254,7 +265,7 @@ ul#portal-globalnav {
 	// 	select ~ label {
 	// 		margin-left: -1 * $value-indent;
 	// 		font-weight: bold;
-	// 		color: darken($title-color, 15%);
+	// 		color: darken($theme-color, 15%);
 	// 		font-size: 90%;
 	// 	}
 	// }
@@ -316,8 +327,8 @@ ul#portal-globalnav {
 			src='$image', sizingMethod='scale');
 
 		background: url($image) no-repeat center center;
-		background-color: $title-color;
-		background-image: url($image), linear-gradient(to bottom, $title-color, darken($title-color, 33%));
+		background-color: $theme-color;
+		background-image: url($image), linear-gradient(to bottom, $theme-color, darken($theme-color, 33%));
 		background-size: cover;
 
 		padding: 150px 0.5em 0.5em;
@@ -432,7 +443,7 @@ ul#portal-globalnav {
 		box-sizing: border-box;
 		$height: 1.5em + $in-gap + $in-gap;
 		// the first link is the header
-		color: $title-color;
+		color: $theme-color;
 		text-align: center;
 		// font-weight: bold;
 		display: block;
@@ -452,8 +463,8 @@ ul#portal-globalnav {
 			margin: -0.5em * 1/$font-size-ratio;
 			margin-bottom: $in-gap/2;
 			color: rgba(white, 0.9);
-			background: $title-color;
-			background: linear-gradient(to bottom, rgba($title-color, 0.8), rgba($title-color, 1));
+			background: $theme-color;
+			background: linear-gradient(to bottom, rgba($theme-color, 0.8), rgba($theme-color, 1));
 			border-radius: 6px;
 			padding-left: $in-gap/2;
 			padding-right: $in-gap/2;
@@ -471,7 +482,7 @@ ul#portal-globalnav {
 			&:hover {
 				background-position: 0 0;
 				text-decoration: underline;
-				color: $title-color ! important; // need to bust the "important" specified in existing theme css
+				color: $theme-color ! important; // need to bust the "important" specified in existing theme css
 			}
 		}
 	}
@@ -634,7 +645,7 @@ ul#portal-globalnav {
 					display: block;
 					padding: $padding/2 0;
 					font-size: 110%;
-					color: $title-color;
+					color: $theme-color;
 					text-shadow: 0 0 4px #fff, 0 0 7px #fff, 0 0 10px #fff;
 				}
 

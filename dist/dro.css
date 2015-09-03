@@ -213,9 +213,6 @@ body {
   font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 300; }
 
-#content {
-  font-size: inherit; }
-
 #content-core h2, #content-core h3 {
   margin-top: 2em; }
   #content-core h2:first-of-type, #content-core h3:first-of-type {
@@ -223,6 +220,14 @@ body {
 
 #content-core ul {
   margin-bottom: 1em; }
+
+#content {
+  font-size: inherit; }
+  #content h1, #content h2, #content h3 {
+    letter-spacing: -0.01em;
+    color: #006644; }
+  #content h2 {
+    border-bottom: 1px solid rgba(0, 153, 102, 0.34); }
 
 body {
   background-color: #f8f8f8;
@@ -247,9 +252,9 @@ body {
 dl.portlet {
   background-color: #f8f8f8; }
   dl.portlet dt.portletHeader {
-    background-color: #004427;
-    background-image: -webkit-linear-gradient(top, #074, #004427);
-    background-image: linear-gradient(to bottom, #074, #004427); }
+    background-color: #006644;
+    background-image: -webkit-linear-gradient(top, #096, #006644);
+    background-image: linear-gradient(to bottom, #096, #006644); }
 
 #portal-top {
   background-color: transparent; }
@@ -261,8 +266,8 @@ dl.portlet {
   background-size: cover; }
 
 ul#portal-globalnav {
-  background: -webkit-linear-gradient(top, rgba(0, 119, 68, 0.1), rgba(0, 119, 68, 0.9));
-  background: linear-gradient(to bottom, rgba(0, 119, 68, 0.1), rgba(0, 119, 68, 0.9));
+  background: -webkit-linear-gradient(top, rgba(153, 204, 102, 0.1), rgba(153, 204, 102, 0.9));
+  background: linear-gradient(to bottom, rgba(153, 204, 102, 0.1), rgba(153, 204, 102, 0.9));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
   font-size: inherit;
@@ -320,7 +325,7 @@ ul#portal-globalnav {
 #content form label, #content form .label, #content form label.formQuestion {
   margin-left: -1%;
   font-weight: bold;
-  color: #002a18;
+  color: #004d33;
   font-size: 90%; }
 #content form input[type=checkbox] ~ label,
 #content form input[type=radio] ~ label {
@@ -343,9 +348,9 @@ ul#portal-globalnav {
 .section-the-facility #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/facility) no-repeat center center;
-  background-color: #074;
-  background-image: url(/dro/media/photo-headings/facility), -webkit-linear-gradient(top, #074, black);
-  background-image: url(/dro/media/photo-headings/facility), linear-gradient(to bottom, #074, black);
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/facility), -webkit-linear-gradient(top, #096, black);
+  background-image: url(/dro/media/photo-headings/facility), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -356,9 +361,9 @@ ul#portal-globalnav {
 .section-about-the-dro #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/about) no-repeat center center;
-  background-color: #074;
-  background-image: url(/dro/media/photo-headings/about), -webkit-linear-gradient(top, #074, black);
-  background-image: url(/dro/media/photo-headings/about), linear-gradient(to bottom, #074, black);
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/about), -webkit-linear-gradient(top, #096, black);
+  background-image: url(/dro/media/photo-headings/about), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -369,9 +374,9 @@ ul#portal-globalnav {
 .section-the-local-region #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/region) no-repeat center center;
-  background-color: #074;
-  background-image: url(/dro/media/photo-headings/region), -webkit-linear-gradient(top, #074, black);
-  background-image: url(/dro/media/photo-headings/region), linear-gradient(to bottom, #074, black);
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/region), -webkit-linear-gradient(top, #096, black);
+  background-image: url(/dro/media/photo-headings/region), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -382,9 +387,9 @@ ul#portal-globalnav {
 .section-experiences #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/experiences) no-repeat center center;
-  background-color: #074;
-  background-image: url(/dro/media/photo-headings/experiences), -webkit-linear-gradient(top, #074, black);
-  background-image: url(/dro/media/photo-headings/experiences), linear-gradient(to bottom, #074, black);
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/experiences), -webkit-linear-gradient(top, #096, black);
+  background-image: url(/dro/media/photo-headings/experiences), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -395,9 +400,9 @@ ul#portal-globalnav {
 .section-research #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/research) no-repeat center center;
-  background-color: #074;
-  background-image: url(/dro/media/photo-headings/research), -webkit-linear-gradient(top, #074, black);
-  background-image: url(/dro/media/photo-headings/research), linear-gradient(to bottom, #074, black);
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/research), -webkit-linear-gradient(top, #096, black);
+  background-image: url(/dro/media/photo-headings/research), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -408,9 +413,9 @@ ul#portal-globalnav {
 .section-learning-and-teaching #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/learning-and-teaching) no-repeat center center;
-  background-color: #074;
-  background-image: url(/dro/media/photo-headings/learning-and-teaching), -webkit-linear-gradient(top, #074, black);
-  background-image: url(/dro/media/photo-headings/learning-and-teaching), linear-gradient(to bottom, #074, black);
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/learning-and-teaching), -webkit-linear-gradient(top, #096, black);
+  background-image: url(/dro/media/photo-headings/learning-and-teaching), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -421,9 +426,9 @@ ul#portal-globalnav {
 .section-media #content .documentFirstHeading {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='$image', sizingMethod='scale');
   background: url(/dro/media/photo-headings/media) no-repeat center center;
-  background-color: #074;
-  background-image: url(/dro/media/photo-headings/media), -webkit-linear-gradient(top, #074, black);
-  background-image: url(/dro/media/photo-headings/media), linear-gradient(to bottom, #074, black);
+  background-color: #096;
+  background-image: url(/dro/media/photo-headings/media), -webkit-linear-gradient(top, #096, black);
+  background-image: url(/dro/media/photo-headings/media), linear-gradient(to bottom, #096, black);
   background-size: cover;
   padding: 150px 0.5em 0.5em;
   color: white;
@@ -496,7 +501,7 @@ ul#portal-globalnav {
     .section-research #content-core ol:last-of-type li a:first-of-type {
       position: static;
       box-sizing: border-box;
-      color: #074;
+      color: #096;
       text-align: center;
       display: block;
       height: 3.5em;
@@ -510,9 +515,9 @@ ul#portal-globalnav {
       margin: -0.41667em;
       margin-bottom: 0.5em;
       color: rgba(255, 255, 255, 0.9);
-      background: #074;
-      background: -webkit-linear-gradient(top, rgba(0, 119, 68, 0.8), #007744);
-      background: linear-gradient(to bottom, rgba(0, 119, 68, 0.8), #007744);
+      background: #096;
+      background: -webkit-linear-gradient(top, rgba(0, 153, 102, 0.8), #009966);
+      background: linear-gradient(to bottom, rgba(0, 153, 102, 0.8), #009966);
       border-radius: 6px;
       padding-left: 0.5em;
       padding-right: 0.5em; }
@@ -569,7 +574,7 @@ ul#portal-globalnav {
     .section-home #content-core ol:last-of-type li a:first-of-type {
       position: static;
       box-sizing: border-box;
-      color: #074;
+      color: #096;
       text-align: center;
       display: block;
       height: 3.5em;
@@ -592,7 +597,7 @@ ul#portal-globalnav {
       .section-home #content-core ol:last-of-type li a:first-of-type:hover {
         background-position: 0 0;
         text-decoration: underline;
-        color: #074 !important; }
+        color: #096 !important; }
 
 .subsection-the-facility #content-core > * > ol:last-of-type,
 .subsection-teaching-resources #content-core > * > ol:last-of-type,
@@ -714,7 +719,7 @@ ul#portal-globalnav {
     .section-about-the-dro #content-core > * > ol:last-of-type li a:first-of-type {
       position: static;
       box-sizing: border-box;
-      color: #074;
+      color: #096;
       text-align: center;
       display: block;
       height: 3.5em;
@@ -749,7 +754,7 @@ ul#portal-globalnav {
       .section-about-the-dro #content-core > * > ol:last-of-type li a:first-of-type:hover {
         background-position: 0 0;
         text-decoration: underline;
-        color: #074 !important; }
+        color: #096 !important; }
 
 .section-home.template-atct_edit #content .fancywrapper {
   height: auto; }
@@ -838,7 +843,7 @@ ul#portal-globalnav {
       display: block;
       padding: 7.5px 0;
       font-size: 110%;
-      color: #074;
+      color: #096;
       text-shadow: 0 0 4px #fff, 0 0 7px #fff, 0 0 10px #fff; }
     .section-home:not(.template-atct_edit) #content ul.features li p {
       font-size: 90%;
