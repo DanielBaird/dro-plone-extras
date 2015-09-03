@@ -213,9 +213,6 @@ body {
   font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 300; }
 
-#content {
-  font-size: inherit; }
-
 #content-core h2, #content-core h3 {
   margin-top: 2em; }
   #content-core h2:first-of-type, #content-core h3:first-of-type {
@@ -223,6 +220,14 @@ body {
 
 #content-core ul {
   margin-bottom: 1em; }
+
+#content {
+  font-size: inherit; }
+  #content h1, #content h2, #content h3 {
+    letter-spacing: -0.01em;
+    color: #006644; }
+  #content h2 {
+    border-bottom: 1px solid rgba(0, 153, 102, 0.34); }
 
 body {
   background-color: #f8f8f8;
