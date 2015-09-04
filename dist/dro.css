@@ -447,8 +447,7 @@ ul#portal-globalnav {
   width: 100%;
   clear: both;
   padding-top: 1em;
-  padding-bottom: 2em;
-  text-align: justify; }
+  padding-bottom: 2em; }
   .section-learning-and-teaching #content-core ol:last-of-type li,
   .section-research #content-core ol:last-of-type li {
     width: 12em;
@@ -457,18 +456,13 @@ ul#portal-globalnav {
     font-size: 80%;
     background-image: -webkit-linear-gradient(bottom, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 0.5em, rgba(51, 204, 34, 0) 1.5em), -webkit-linear-gradient(top, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 0.5em, rgba(51, 204, 34, 0) 1.5em);
     background-image: linear-gradient(to top, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 0.5em, rgba(51, 204, 34, 0) 1.5em), linear-gradient(to bottom, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 0.5em, rgba(51, 204, 34, 0) 1.5em);
-    font-size: 90%;
-    width: 14em;
-    min-height: 14em;
-    background-image: -webkit-linear-gradient(bottom, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 1em, rgba(51, 204, 34, 0) 2em);
-    background-image: linear-gradient(to top, rgba(51, 204, 34, 0.2), rgba(51, 204, 34, 0.05) 1em, rgba(51, 204, 34, 0) 2em);
     background-color: #fff;
     display: inline-block;
     position: relative;
     vertical-align: top;
     text-align: left;
     padding: 1em;
-    margin: 1em 0.66667em;
+    margin: 0.5em 0.33333em;
     border-radius: 2px; }
     .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(1):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(1):first-child ~ li,
     .section-research #content-core ol:last-of-type li:nth-last-child(1):first-child,
@@ -511,22 +505,22 @@ ul#portal-globalnav {
       float: none;
       font-style: normal;
       white-space: normal;
-      font-size: 120%;
-      margin: -0.41667em;
-      margin-bottom: 0.5em;
-      color: rgba(255, 255, 255, 0.9);
-      background: #096;
-      background: -webkit-linear-gradient(top, rgba(0, 153, 102, 0.8), #009966);
-      background: linear-gradient(to bottom, rgba(0, 153, 102, 0.8), #009966);
-      border-radius: 6px;
-      padding-left: 0.5em;
-      padding-right: 0.5em; }
+      font-weight: bold;
+      font-size: 110%;
+      background: -webkit-linear-gradient(top, rgba(51, 204, 34, 0), rgba(51, 204, 34, 0.1));
+      background: linear-gradient(to bottom, rgba(51, 204, 34, 0), rgba(51, 204, 34, 0.1));
+      background-repeat: no-repeat;
+      background-position: 0 3.25em;
+      -webkit-transition: 0.3s;
+              transition: 0.3s; }
       .section-learning-and-teaching #content-core ol:last-of-type li a:first-of-type:after,
       .section-research #content-core ol:last-of-type li a:first-of-type:after {
         display: none; }
       .section-learning-and-teaching #content-core ol:last-of-type li a:first-of-type:hover,
       .section-research #content-core ol:last-of-type li a:first-of-type:hover {
-        color: white !important; }
+        background-position: 0 0;
+        text-decoration: underline;
+        color: #096 !important; }
 
 .section-home #content-core ol:last-of-type {
   margin-left: 0;
@@ -537,7 +531,6 @@ ul#portal-globalnav {
   clear: both;
   padding-top: 1em;
   padding-bottom: 2em;
-  text-align: justify;
   text-align: right; }
   .section-home #content-core ol:last-of-type li {
     width: 12em;
@@ -610,8 +603,7 @@ ul#portal-globalnav {
   width: 100%;
   clear: both;
   padding-top: 1em;
-  padding-bottom: 2em;
-  text-align: justify; }
+  padding-bottom: 2em; }
   .subsection-the-facility #content-core > * > ol:last-of-type li,
   .subsection-teaching-resources #content-core > * > ol:last-of-type li,
   .section-the-local-region #content-core > * > ol:last-of-type li,

@@ -367,7 +367,7 @@ ul#portal-globalnav {
 	padding-top: 1em;
 	padding-bottom: 2em;
 
-	text-align: justify;
+	// text-align: justify;
 	// &:after {
 	// 	content: '';
 	// 	display: inline-block;
@@ -394,13 +394,13 @@ ul#portal-globalnav {
 	&:nth-last-child(4):first-child, &:nth-last-child(4):first-child ~ li { width: 18%; }
 
 	@if ($size == 'large') {
-		font-size: 90%;
-		$in-gap: 1em;
-		$out-gap: 1em;
-		width: 14em;
-		min-height: 14em;
-		// border: 1px solid rgba($shading, 0.5);
-		background-image: linear-gradient(to top, rgba($shading, 0.2), rgba($shading, 0.05) 1 * $in-gap, rgba($shading, 0) 2 * $in-gap);
+		// font-size: 90%;
+		// $in-gap: 1em;
+		// $out-gap: 1em;
+		// width: 14em;
+		// min-height: 14em;
+		// // border: 1px solid rgba($shading, 0.5);
+		// background-image: linear-gradient(to top, rgba($shading, 0.2), rgba($shading, 0.05) 1 * $in-gap, rgba($shading, 0) 2 * $in-gap);
 	}
 
 	background-color: #fff;
@@ -456,23 +456,23 @@ ul#portal-globalnav {
 		white-space: normal;
 		&:after { display: none };
 
-		// large links look button-y
-		@if ($size == 'large') {
-			$font-size-ratio: 1.2;
-			font-size: 100% * $font-size-ratio;
-			margin: -0.5em * 1/$font-size-ratio;
-			margin-bottom: $in-gap/2;
-			color: rgba(white, 0.9);
-			background: $theme-color;
-			background: linear-gradient(to bottom, rgba($theme-color, 0.8), rgba($theme-color, 1));
-			border-radius: 6px;
-			padding-left: $in-gap/2;
-			padding-right: $in-gap/2;
-			&:hover { color: white ! important; } // need to bust the "important" specified in existing theme css
-		}
+		// // large links look button-y
+		// @if ($size == 'large') {
+		// 	$font-size-ratio: 1.2;
+		// 	font-size: 100% * $font-size-ratio;
+		// 	margin: -0.5em * 1/$font-size-ratio;
+		// 	margin-bottom: $in-gap/2;
+		// 	color: rgba(white, 0.9);
+		// 	background: $theme-color;
+		// 	background: linear-gradient(to bottom, rgba($theme-color, 0.8), rgba($theme-color, 1));
+		// 	border-radius: 6px;
+		// 	padding-left: $in-gap/2;
+		// 	padding-right: $in-gap/2;
+		// 	&:hover { color: white ! important; } // need to bust the "important" specified in existing theme css
+		// }
 
 		// small links look link-y
-		@if ($size == 'small') {
+		// @if ($size == 'small') {
 			font-weight: bold;
 			font-size: 110%;
 			background: linear-gradient(to bottom, rgba($shading, 0), rgba($shading, 0.1));
@@ -484,7 +484,7 @@ ul#portal-globalnav {
 				text-decoration: underline;
 				color: $theme-color ! important; // need to bust the "important" specified in existing theme css
 			}
-		}
+		// }
 	}
 }
 
