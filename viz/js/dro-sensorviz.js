@@ -43,7 +43,7 @@ function buildViz(vizElement, dataRoot) {
 		}
 
 		var $viz = $('<div class="droviz-wrap">' +
-					'<div id="info">Temporarily showing sample data.</div>' +
+					'<div id="info">Temporarily showing sample sensor placement. Sensor data available soon.</div>' +
 					'<div id="scape"></div>' +
 					'<div id="data"></div>' +
 					'</div>');
@@ -79,9 +79,9 @@ function buildViz(vizElement, dataRoot) {
 		dro.f.addGroundStacks([{
 				x:50, y: 50, stack:[
 					[Scape.Stuff.leaflitter, 0.1],
-					[Scape.Stuff.dirt0,      2],
+					[Scape.Stuff.dirt6,      2],
 					[Scape.Stuff.dirt3,      4],
-					[Scape.Stuff.dirt6,      6],
+					[Scape.Stuff.dirt0,      6],
 					[Scape.Stuff.dirt9,      0]
 				]
 			}
@@ -103,7 +103,8 @@ function buildViz(vizElement, dataRoot) {
 					timeStr = ((hr - 1) % 12 + 1) + (hr > 12 ? 'pm' : 'am');
 					if (timeStr == '0am') timeStr = 'midnight'
 					if (timeStr == '12am') timeStr = 'noon'
-					$('#info').text(infoStaticText + ' Sun position is ' + timeStr);
+					// $('#info').text(infoStaticText + ' Sun position is ' + timeStr);
+					$('#info').text(infoStaticText);
 					currentHour = hr;
 				}
 				// update the crane rotation
