@@ -479,7 +479,7 @@ ul#portal-globalnav {
     .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(4):first-child, .section-learning-and-teaching #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li,
     .section-research #content-core ol:last-of-type li:nth-last-child(4):first-child,
     .section-research #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li {
-      width: 18%; }
+      width: 20%; }
     .section-learning-and-teaching #content-core ol:last-of-type li a:last-of-type,
     .section-research #content-core ol:last-of-type li a:last-of-type {
       position: absolute;
@@ -554,7 +554,7 @@ ul#portal-globalnav {
     .section-home #content-core ol:last-of-type li:nth-last-child(3):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(3):first-child ~ li {
       width: 23%; }
     .section-home #content-core ol:last-of-type li:nth-last-child(4):first-child, .section-home #content-core ol:last-of-type li:nth-last-child(4):first-child ~ li {
-      width: 18%; }
+      width: 20%; }
     .section-home #content-core ol:last-of-type li a:last-of-type {
       position: absolute;
       bottom: 1em;
@@ -680,7 +680,7 @@ ul#portal-globalnav {
     .section-booking-forms #content-core > * > ol:last-of-type li:nth-last-child(4):first-child ~ li,
     .section-about-the-dro #content-core > * > ol:last-of-type li:nth-last-child(4):first-child,
     .section-about-the-dro #content-core > * > ol:last-of-type li:nth-last-child(4):first-child ~ li {
-      width: 18%; }
+      width: 20%; }
     .subsection-the-facility #content-core > * > ol:last-of-type li a:last-of-type,
     .subsection-teaching-resources #content-core > * > ol:last-of-type li a:last-of-type,
     .section-the-local-region #content-core > * > ol:last-of-type li a:last-of-type,

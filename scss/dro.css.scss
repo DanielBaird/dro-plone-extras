@@ -391,7 +391,7 @@ ul#portal-globalnav {
 	&:nth-last-child(1):first-child, &:nth-last-child(1):first-child ~ li { width: 33%; }
 	&:nth-last-child(2):first-child, &:nth-last-child(2):first-child ~ li { width: 26%; }
 	&:nth-last-child(3):first-child, &:nth-last-child(3):first-child ~ li { width: 23%; }
-	&:nth-last-child(4):first-child, &:nth-last-child(4):first-child ~ li { width: 18%; }
+	&:nth-last-child(4):first-child, &:nth-last-child(4):first-child ~ li { width: 20%; }
 
 	@if ($size == 'large') {
 		// font-size: 90%;
