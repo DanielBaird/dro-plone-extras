@@ -5,7 +5,7 @@
 // (1 April 2015)
 // compile this into css, then paste the result into the css
 // page in plone:
-// https://research.jcu.edu.au/dro/dro_custom.css/manage
+// https://research.jcu.edu.au/dro/dro_custom.css/manage/
 // It will be included in every page in the /dro site.
 //
 
@@ -19,15 +19,15 @@ $shading: #3c2; // used for gradient edges etc
 $page-bg: #f8f8f8; // page background colour
 
 // banners & branding images for site sections
-$banner-image: /dro/media/dro-banner;
+$banner-image: '/dro/media/dro-banner';
 
-$experience-banner: /dro/media/experience-banner;
-$landt-banner: /dro/media/landt-banner;
-$research-banner: /dro/media/research-banner;
+$experience-banner: '/dro/media/experience-banner';
+$landt-banner: '/dro/media/landt-banner';
+$research-banner: '/dro/media/research-banner';
 
-$experience-square: /dro/media/experience-banner;
-$landt-square: /dro/media/landt-banner;
-$research-square: /dro/media/research-banner;
+$experience-square: '/dro/media/experience-banner';
+$landt-square: '/dro/media/landt-banner';
+$research-square: '/dro/media/research-banner';
 
 $logo-height: 124px; // height of JCU logo in banner
 $nav-tab-height: 41px; // height of nav tabs
@@ -294,6 +294,7 @@ ul#portal-globalnav {
 
 /////////////////////////////////// big teardrop image on major pages
 
+// ACTUALLY THIS IS NOT USED
 @mixin big-teardrop-image {
 	$radius: 160px;
 	float: left;
@@ -341,13 +342,13 @@ ul#portal-globalnav {
 }
 
 // pages that use the photo banner..
-.section-the-facility     { @include title-photo-bg(/dro/media/photo-headings/facility); }
-.section-about-the-dro    { @include title-photo-bg(/dro/media/photo-headings/about); }
-.section-the-local-region { @include title-photo-bg(/dro/media/photo-headings/region); }
-.section-experiences      { @include title-photo-bg(/dro/media/photo-headings/experiences); }
-.section-research         { @include title-photo-bg(/dro/media/photo-headings/research); }
-.section-learning-and-teaching { @include title-photo-bg(/dro/media/photo-headings/learning-and-teaching); }
-.section-media            { @include title-photo-bg(/dro/media/photo-headings/media); }
+.section-the-facility     { @include title-photo-bg('/dro/media/photo-headings/facility'); }
+.section-about-the-dro    { @include title-photo-bg('/dro/media/photo-headings/about'); }
+.section-the-local-region { @include title-photo-bg('/dro/media/photo-headings/region'); }
+.section-experiences      { @include title-photo-bg('/dro/media/photo-headings/experiences'); }
+.section-research         { @include title-photo-bg('/dro/media/photo-headings/research'); }
+.section-learning-and-teaching { @include title-photo-bg('/dro/media/photo-headings/learning-and-teaching'); }
+.section-media            { @include title-photo-bg('/dro/media/photo-headings/media'); }
 
 
 /////////////////////////////////////////////// photo-paragraph pages
@@ -380,18 +381,25 @@ ul#portal-globalnav {
 	$in-gap: 1em;
 	$out-gap: 0.5em;
 
-	width: 12em;
+	width: 20%;
 	min-width: 12em;
 	min-height: 11em;
 	font-size: 80%;
 	background-image: linear-gradient(to top,    rgba($shading, 0.2), rgba($shading, 0.05) 0.5 * $in-gap, rgba($shading, 0) 1.5 * $in-gap),
 	                  linear-gradient(to bottom, rgba($shading, 0.2), rgba($shading, 0.05) 0.5 * $in-gap, rgba($shading, 0) 1.5 * $in-gap);
 
+	background-image: linear-gradient(to bottom, rgba($shading, 0.2), rgba($shading, 0.05) 1 * $in-gap, rgba($shading, 0) 3 * $in-gap);
+
+	border-radius: 1px;
+	border-top: 1px solid rgba($shading, 0.3);
+	border-bottom: 1px solid rgba($shading, 0.1);
+
 	// this only works if this mixin is used inside an li. sorry.
 	&:nth-last-child(1):first-child, &:nth-last-child(1):first-child ~ li { width: 33%; }
 	&:nth-last-child(2):first-child, &:nth-last-child(2):first-child ~ li { width: 26%; }
 	&:nth-last-child(3):first-child, &:nth-last-child(3):first-child ~ li { width: 23%; }
 	&:nth-last-child(4):first-child, &:nth-last-child(4):first-child ~ li { width: 20%; }
+	&:nth-last-child(5):first-child, &:nth-last-child(5):first-child ~ li { width: 16.66%; }
 
 	@if ($size == 'large') {
 		// font-size: 90%;
@@ -608,6 +616,11 @@ ul#portal-globalnav {
 				background-image: linear-gradient(to top,    rgba($color, 0.2), rgba($color, 0.05) 0.5 * $padding, rgba($color, 0) 1.5 * $padding),
 	        			          linear-gradient(to bottom, rgba($color, 0.2), rgba($color, 0.05) 0.5 * $padding, rgba($color, 0) 1.5 * $padding);
 
+				background-image: linear-gradient(to bottom, rgba($color, 0.2), rgba($color, 0.05) 1 * $padding, rgba($color, 0) 3 * $padding);
+
+				border-top: 1px solid rgba($color, 0.3);
+				border-bottom: 1px solid rgba($color, 0.1);
+
 				// rounded corners
 				position: relative;
 				$radius: 50px;
@@ -771,45 +784,45 @@ ul#portal-globalnav {
 
 ///////////////////////////////////////////////////// todo paragraphs
 
-p.todo, td.todo, th.todo, h1.todo, h2.todo, h3.todo, h4.todo {
-	background: #ffb;
-}
-p.todo {
-	padding: 0.66em 1em;
-	opacity: 0.5;
-	transition: opacity 0.2s;
-}
-p.todo:hover {
-	opacity: 1;
-}
-
-// todos that mention "pic"
-p.todo.todo-pic {
-	opacity: 1;
-	margin: 0 auto;
-	background-image: url(http://placecorgi.com/700/100);
-	background-position: center;
-	background-size: cover;
-	padding: 1em;
-	color: white;
-	text-shadow: -6px 0 8px #000, -3px 0 8px #000, 0 0 8px #000, 3px 0 8px #000, 6px 0 8px #000;
-
-	a:link { color: #def ! important; }
-	a:visited { color: #bcf ! important; }
-
-						height: 350px;  width: 95%;
-	&.todo-pic-small {  height: 100px;  width: 33%; }
-	&.todo-pic-strip {  height:  80px;  width: 90%; }
-}
-
-// some more-or-less random corgi pics..
-p.todo.todo-pic.todo-pic-0 { background-image: url(http://placecorgi.com/390/300); }
-p.todo.todo-pic.todo-pic-1 { background-image: url(http://placecorgi.com/190/310); }
-p.todo.todo-pic.todo-pic-2 { background-image: url(http://placecorgi.com/290/320); }
-p.todo.todo-pic.todo-pic-3 { background-image: url(http://placecorgi.com/390/330); }
-p.todo.todo-pic.todo-pic-4 { background-image: url(http://placecorgi.com/490/340); }
-p.todo.todo-pic.todo-pic-5 { background-image: url(http://placecorgi.com/590/350); }
-p.todo.todo-pic.todo-pic-6 { background-image: url(http://placecorgi.com/690/360); }
-p.todo.todo-pic.todo-pic-7 { background-image: url(http://placecorgi.com/790/370); }
-p.todo.todo-pic.todo-pic-8 { background-image: url(http://placecorgi.com/890/380); }
-p.todo.todo-pic.todo-pic-9 { background-image: url(http://placecorgi.com/990/390); }
+// p.todo, td.todo, th.todo, h1.todo, h2.todo, h3.todo, h4.todo {
+// 	background: #ffb;
+// }
+// p.todo {
+// 	padding: 0.66em 1em;
+// 	opacity: 0.5;
+// 	transition: opacity 0.2s;
+// }
+// p.todo:hover {
+// 	opacity: 1;
+// }
+//
+// // todos that mention "pic"
+// p.todo.todo-pic {
+// 	opacity: 1;
+// 	margin: 0 auto;
+// 	background-image: url(http://placecorgi.com/700/100);
+// 	background-position: center;
+// 	background-size: cover;
+// 	padding: 1em;
+// 	color: white;
+// 	text-shadow: -6px 0 8px #000, -3px 0 8px #000, 0 0 8px #000, 3px 0 8px #000, 6px 0 8px #000;
+//
+// 	a:link { color: #def ! important; }
+// 	a:visited { color: #bcf ! important; }
+//
+// 						height: 350px;  width: 95%;
+// 	&.todo-pic-small {  height: 100px;  width: 33%; }
+// 	&.todo-pic-strip {  height:  80px;  width: 90%; }
+// }
+//
+// // some more-or-less random corgi pics..
+// p.todo.todo-pic.todo-pic-0 { background-image: url(http://placecorgi.com/390/300); }
+// p.todo.todo-pic.todo-pic-1 { background-image: url(http://placecorgi.com/190/310); }
+// p.todo.todo-pic.todo-pic-2 { background-image: url(http://placecorgi.com/290/320); }
+// p.todo.todo-pic.todo-pic-3 { background-image: url(http://placecorgi.com/390/330); }
+// p.todo.todo-pic.todo-pic-4 { background-image: url(http://placecorgi.com/490/340); }
+// p.todo.todo-pic.todo-pic-5 { background-image: url(http://placecorgi.com/590/350); }
+// p.todo.todo-pic.todo-pic-6 { background-image: url(http://placecorgi.com/690/360); }
+// p.todo.todo-pic.todo-pic-7 { background-image: url(http://placecorgi.com/790/370); }
+// p.todo.todo-pic.todo-pic-8 { background-image: url(http://placecorgi.com/890/380); }
+// p.todo.todo-pic.todo-pic-9 { background-image: url(http://placecorgi.com/990/390); }
