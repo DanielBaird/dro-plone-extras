@@ -1,14 +1,19 @@
 
 echo
 echo " * About to update Plone."
+echo
+echo "   For this to work, you need node-sass and autoprefixer.  On OSX:"
+echo "   brew install node"
+echo "   npm install -g node-sass autoprefixer-cli"
+echo "   To use original Ruby-gem sass, edit this script."
 
 pushd ~/jcu/dro-plone-extras
 
 
 echo
 echo " * compiling css... "
-scss scss/dro.css.scss dist/dro.css
-autoprefixer --browsers "> 1%, last 2 versions, Firefox ESR, Opera 12.1" dist/dro.css
+node-sass scss/dro.css.scss dist/dro.css
+autoprefixer-cli --browsers "> 1%, last 2 versions, Firefox ESR, Opera 12.1" dist/dro.css
 
 echo
 echo " * compiling js... "
@@ -33,6 +38,3 @@ echo " * done."
 # --form "precondition=" \
 # --form "manage_upload:method=Upload" \
 # --form "fileupload=@dist/dro.js;filename=dro.js;type=application/x-javascript" | grep 'aved change'
-
-
-
